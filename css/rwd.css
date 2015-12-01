@@ -1,0 +1,80 @@
+
+#intro {
+background-image: url("http://www.falseprovince.com/images/duende2/bg/bg3.jpg");
+background-size:100%;
+}
+#detail {
+background: #7897B5; /*detail background-color*/
+}
+#report {
+background-image: url("http://www.psdgraphics.com/file/abstract-mosaic-background.png");
+background-size:100%;
+background-repeat:repeat-y;
+}
+.section {
+padding: 20px 0;
+}
+.space {
+height: 120px;
+}
+
+/* rwd */
+@media (min-width: 700px){
+    .visible.on.xs{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .visible.having.sm{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .visible.on.sm{
+        display: none;
+    }
+}
+
+@media (min-width: 1050px){
+    .visible.on.sm{
+        display: none;
+    }
+}
+
+@media (max-width: 1050px){
+    .visible.on.md{
+        display: none;
+    }
+}
+
+@media (max-width: 1050px){
+    .visible.having.md{
+        display: none;
+    }
+}
+
+@media (min-width: 1050px){
+    .visible.no.md{
+        display: none;
+    }
+}
+
+@media (min-width: 1400px){
+    .visible.on.md{
+        display: none;
+    }
+}
+
+@media (max-width: 1400px){
+    .visible.on.lg{
+        display: none;
+    }
+}
+
+@media (min-width: 1400px){
+    .visible.no.lg{
+        display: none;
+    }
+}
