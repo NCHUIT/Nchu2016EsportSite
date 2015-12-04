@@ -1,15 +1,16 @@
 
 #intro {
 background-image: url("http://www.falseprovince.com/images/duende2/bg/bg3.jpg");
-background-size:100%;
+background-attachment: fixed;
+background-size: cover;
 }
 #detail {
-background: #7897B5; /*detail background-color*/
+background:-webkit-linear-gradient(#85BEE8,#14476D);
 }
 #report {
 background-image: url("http://www.psdgraphics.com/file/abstract-mosaic-background.png");
-background-size:100%;
-background-repeat:repeat-y;
+background-attachment: fixed;
+background-size: cover;
 }
 .section {
 padding: 20px 0;
@@ -23,9 +24,13 @@ height: 120px;
     border: 1px solid #DDD;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.ui.attached.stackable.menu{
-    height: 60px;
+.ui.top.fixed.menu{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
+.ui.segment{
+    background: rgba(0, 37, 77, 0.31);
+}
+
 
 
 
