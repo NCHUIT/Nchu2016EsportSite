@@ -17,6 +17,16 @@ padding: 20px 0;
 .space {
 height: 120px;
 }
+.ui.middle.aligned{
+    background-image: url("http://i.imgur.com/Rr6CYKj.jpg");
+    background-size: 100%;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.ui.attached.stackable.menu{
+    height: 60px;
+}
+
 
 /* rwd */
 @media (min-width: 700px){
