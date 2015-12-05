@@ -82,7 +82,6 @@
 		</div>
 		<div class="two wide column"></div>
 	</div>
-
 		<div class="space visible having sm"></div>
 	</div>
 
@@ -117,8 +116,8 @@
 	<div id="report" class="section">
 		<div class="space visible having sm"></div>
 		<div class="ui grid">
-			<div class="one wide column"></div>
-			<div class="fourteen wide column">	
+			<div class="two wide column"></div>
+			<div class="eight wide column">	
 
 			<!--LOL HS report card start -->
 				<div class="ui special cards">
@@ -172,8 +171,98 @@
 					</div>
 				</div>
 			</div>
+
+			<!--LOL HS scondary start -->
+			<div class="ui modal LOL">
+				<i class="close icon"></i>
+				<div class="header">
+					LOL
+				</div>
+				<div class="image content">
+					<div class="ui medium image">
+						<img src="http://www.myline.tw/images/201504/goods_img/2404_G_1429122583649.jpg">
+					</div>
+					<div class="description">
+					<div class="ui header">繳錢啦幹</div>
+						<p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+						<p>Is it okay to use this photo?</p>
+					</div>
+				</div>
+				<div class="actions">
+					<div class="ui black deny button">
+						Nope
+					</div>
+					<a href="https://goo.gl/wKZNIm" class="ui positive right labeled icon button">
+						Submit
+						<i class="checkmark icon"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="ui modal HS">
+				<i class="close icon"></i>
+				<div class="header">
+					HS
+				</div>
+				<div class="image content">
+					<div class="ui medium image">
+						<img src="http://www.myline.tw/images/201504/goods_img/2404_G_1429122583649.jpg">
+					</div>
+					<div class="description">
+						<div class="ui header">繳錢啦幹</div>
+						<p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+						<p>Is it okay to use this photo?</p>
+					</div>
+				</div>
+				<div class="actions">
+					<div class="ui black deny button">
+						Nope
+					</div>
+					<a href="https://goo.gl/ADpt6P" class="ui positive right labeled icon button">
+						Submit
+						<i class="checkmark icon"></i>
+					</a>
+				</div>
+			</div>	
+			<!--LOL HS scondary end -->
+
 			<!--LOL HS report card end -->
-			<div class="one wide column"></div>
+			<div class="four wide column">
+				<div class="ui cards">
+					<div class="card">
+						<div class="content">
+							<div class="header">皮卡丘</div>
+							<div class="description">
+								Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
+								<br><br><br><br>
+							</div>
+						</div>
+						<div class="ui bottom attached button">
+							<i class="add icon"></i>
+							清流盃 皮卡丘打排球報名系統
+						</div>
+					</div>
+				</div>	
+
+				<div class="ui cards">
+					<div class="card">
+						<div class="content">
+							<div class="header">下樓梯</div>
+							<div class="description">
+								Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
+								<br><br><br><br>
+							</div>
+						</div>
+						<div class="ui bottom attached button">
+							<i class="add icon"></i>
+							清流盃 小朋友下樓梯報名系統
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="two wide column"></div>
+
+
 		<div class="space visible having sm"></div>
 	</div>
 
@@ -237,6 +326,22 @@
 			});
 
 		});
+	</script>
+
+	<script>
+	jQuery(document).ready(function(){
+		$('.ui.inverted.button').click(function(){
+			$('.ui.modal.LOL')
+			.modal('show')
+			;
+		});
+
+		$('.ui.primary.button').click(function(){
+			$('.ui.modal.HS')
+			.modal('show')
+			;
+		});
+	});
 	</script>
 </body>
 </html>
