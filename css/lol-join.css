@@ -1,0 +1,41 @@
+/*loljoin*/
+.backgroundlol{
+background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg");
+background-attachment: fixed;
+background-size: cover;
+}
+.ui.segment{
+    background: rgba(34, 36, 38, 0.1);
+    border: 1px solid #B5CC18;
+}
+.ui.inverted.teal.segment {
+    margin: 23px;
+}
+.ui.inverted.segment{
+    background: rgb(60, 64, 68);
+}
+#inp-id{
+	padding: 11px 28px;
+}
+.ui.form.ui.form input[type=text]{
+	background: rgba(253, 236, 202, 0.76);
+}
+.ui.button{
+	background: rgba(45, 19, 8, 0.76);
+	color: #db2828;
+}
+#submit{
+	padding: 17px 40px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #B5CC18;
+}
+.ui.divider:not(.vertical):not(.horizontal) {
+    border: none;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+a{   
+	color: #3CEA65;
+}

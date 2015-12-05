@@ -1,4 +1,4 @@
-/*segment settings*/
+
 #intro {
 background-image: url("http://www.falseprovince.com/images/duende2/bg/bg3.jpg");
 background-attachment: fixed;
@@ -16,10 +16,8 @@ background-size: cover;
 padding: 20px 0;
 }
 .space {
-height: 160px;
+height: 120px;
 }
-
-/*decoration*/
 .ui.middle.aligned{
     background-image: url("http://i.imgur.com/Rr6CYKj.jpg");
     background-size: 100%;
@@ -35,8 +33,6 @@ height: 160px;
 .top.fixed.menu{
     height: 55px;
 }
-
-
 
 
 /* rwd */
