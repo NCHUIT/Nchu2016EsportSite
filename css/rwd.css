@@ -30,6 +30,9 @@ height: 120px;
 .ui.segment{
     background: rgba(0, 37, 77, 0.31);
 }
+.top.fixed.menu{
+    height: 55px;
+}
 
 
 
