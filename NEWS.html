@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>NEWS</title>
+	<title>News</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+​
 </head>
 <body>
-	
-</body>
-</html>
+​
+	<div class="ui grid">
+		<div class="four wide column"></div>
+		<div class="eight wide column">
+		<!-- 最新資訊 公佈欄板塊 -->
+			<div class="ui styled fluid accordion">      <!-- accordion效果 由jQuary提供  -->
+				<div class="active title">
+					<i class="dropdown icon"></i>
+					Title A
+				</div>
+				<div class="active content">
+					<p>Text A</p>
+				</div>
+				<div class="title">
+					<i class="dropdown icon"></i>
+					Title B
+				</div>
+				<div class="content">
+					<p>Text B</p>
+				</div>
+				<div class="title">
+					<i class="dropdown icon"></i>
+					Title C
+				</div>
+				<div class="content">
+					<p>Text C</p>
+				</div>
+				<div class="title">
+					<i class="dropdown icon"></i>
+					Title D
+				</div>
+				<div class="content">
+					<p>Text D-1</p>
+					<p>Text D-2</p>
+				</div>
+				<div class="title">
+					<i class="dropdown icon"></i>
+					Title E
+				</div>
+				<div class="content">
+					<p>Text E-1</p>
+					<p>Text E-2</p>
+				</div>
+				<div class="title">
+					<i class="dropdown icon"></i>
+					More Info...
+				</div>
+				<div class="content">
+					<a href="#">All info page Link</a>
+				</div>
+			</div>
+​
+		</div>
+		<div class="four wide column"></div>
+​
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+​
+		<script>
+			jQuery(document).ready(function(){
+				jQuery('.accordion').accordion();
+			});
+		</script>
+	</body>
+	</html>
