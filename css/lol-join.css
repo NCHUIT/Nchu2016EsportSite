@@ -51,6 +51,7 @@ a.page-artbtn__link{
     background: url(http://lol.garena.tw/img/btn-orange1.png) 50% 0 no-repeat;
     font: 14px/40px Helvetica, 'Microsoft JhengHei';
     text-shadow: 0 0 10px #0f6185;
+    margin-bottom: 10px;
 }
 .page-artbtn__link:hover, .page-artbtn__link--cur {
     background: url(http://lol.garena.tw/img/btn-blue1.png) 50% 0 no-repeat;
