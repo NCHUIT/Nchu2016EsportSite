@@ -1,0 +1,58 @@
+/*loljoin*/
+.backgroundlol{
+background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg");
+background-attachment: fixed;
+background-size: cover;
+}
+.ui.segment{
+    background: rgba(34, 36, 38, 0.1);
+    border: 1px solid #B5CC18;
+}
+.ui.inverted.teal.segment {
+    margin: 23px;
+}
+.ui.inverted.segment{
+    background: rgb(60, 64, 68);
+}
+#inp-id{
+	padding: 11px 22px;
+}
+.ui.form.ui.form input[type=text]{
+	background: rgba(253, 236, 202, 0.76);
+}
+.ui.button{
+	background: rgba(45, 19, 8, 0.76);
+	color: #db2828;
+}
+#submit{
+	padding: 17px 40px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #B5CC18;
+}
+.ui.divider:not(.vertical):not(.horizontal) {
+    border: none;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+a{   
+	color: #3CEA65;
+}
+/*button*/
+a.page-artbtn__link{
+	color: white;
+}
+.page-artbtn__link {
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    height: 40px;
+    background: url(http://lol.garena.tw/img/btn-orange1.png) 50% 0 no-repeat;
+    font: 14px/40px Helvetica, 'Microsoft JhengHei';
+    text-shadow: 0 0 10px #0f6185;
+}
+.page-artbtn__link:hover, .page-artbtn__link--cur {
+    background: url(http://lol.garena.tw/img/btn-blue1.png) 50% 0 no-repeat;
+    text-shadow: 0 0 10px #f44104;
+}
