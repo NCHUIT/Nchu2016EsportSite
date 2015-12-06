@@ -15,7 +15,7 @@ background-size: cover;
     background: rgb(60, 64, 68);
 }
 #inp-id{
-	padding: 11px 28px;
+	padding: 11px 22px;
 }
 .ui.form.ui.form input[type=text]{
 	background: rgba(253, 236, 202, 0.76);
@@ -38,4 +38,21 @@ background-size: cover;
 }
 a{   
 	color: #3CEA65;
+}
+/*button*/
+a.page-artbtn__link{
+	color: white;
+}
+.page-artbtn__link {
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    height: 40px;
+    background: url(http://lol.garena.tw/img/btn-orange1.png) 50% 0 no-repeat;
+    font: 14px/40px Helvetica, 'Microsoft JhengHei';
+    text-shadow: 0 0 10px #0f6185;
+}
+.page-artbtn__link:hover, .page-artbtn__link--cur {
+    background: url(http://lol.garena.tw/img/btn-blue1.png) 50% 0 no-repeat;
+    text-shadow: 0 0 10px #f44104;
 }
