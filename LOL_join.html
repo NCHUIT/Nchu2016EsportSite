@@ -1,274 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
-        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
-        <meta charset="UTF-8">
-        <title>2016清流盃LOL大賽報名表</title>
-    </head>
-    <body background="背景圖片的網址">
-        <div class="ui container">
-            <h1 align='center' >LOL 報名表</h1>
-            <form id="form" class="ui form" action="https://script.google.com/macros/s/AKfycbw4LLPw1CZR8BiMxSO-Nz3FSVtTH2GmARQcDLWtYE2YKFzLD8A/exec" method="POST">
-                <div class="ui grid">
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊伍名稱</a>
-                                <input type="text" name="team_name" value="">
-                            </div>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.lib.nchu.edu.tw/images/nchu_logo.png">
+    <!-- <link rel="shortcut icon" href="http://lol.garena.tw/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/lol-join.css">
+    <meta charset="UTF-8">
+    <title>2016 唯一信癢Χ清流盃LOL大賽報名表</title>
+    <style>
+        .section {
+            padding: 20px 0;
+        }
+        .space {
+            height: 120px;
+        }
+    </style>
+</head>
+<body class="backgroundlol">            
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="ui teal inverted segment">
+                <h3 >2016唯一信癢Χ清流盃LOL大賽報名表</h3>
+            </div>
+        </div>
+        <form id="form" class="ui form" action="https://script.google.com/macros/s/AKfycbw4LLPw1CZR8BiMxSO-Nz3FSVtTH2GmARQcDLWtYE2YKFzLD8A/exec" method="POST">
+            <div class="ui stackable grid">
+                <div class="eight wide column">
+                <div class="ui raised segment">
+                    <div class="ui field">
+                        <div class="ui left action input">
+                            <a class="ui button">隊伍名稱</a>
+                            <input type="text" name="team_name" value="">
                         </div>
-                    </div>
-                    <div class="row">
+                        </div>
+                    <div class="ui field">
                         <div class="ui left action input">
                             <a class="ui button">隊伍簡稱</a>
-                            <input type="text"name="team_short_name" placeholder="">
+                            <input type="text" name="team_short_name" placeholder="">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊員1姓名</a>
-                                <input type="text"name="member1_name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   學號</a>
-                                <input type="text" name="member1_Sid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">系級</a>
-                                <input type="text" name="member1_dep" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">手機號碼</a>
-                                <input type="text"name="member1_number"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">遊戲ID</a>
-                                <input type="text"name="member1_Gid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊員2姓名</a>
-                                <input type="text"name="member2_name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   學號</a>
-                                <input type="text" name="member2_Sid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">系級</a>
-                                <input type="text" name="member2_dep" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">手機號碼</a>
-                                <input type="text"name="member2_number"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">遊戲ID</a>
-                                <input type="text"name="member2_Gid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊員3姓名</a>
-                                <input type="text"name="member3_name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   學號</a>
-                                <input type="text" name="member3_Sid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">系級</a>
-                                <input type="text" name="member3_dep" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">手機號碼</a>
-                                <input type="text"name="member3_number"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">遊戲ID</a>
-                                <input type="text"name="member3_Gid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊員4姓名</a>
-                                <input type="text"name="member4_name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   學號</a>
-                                <input type="text" name="member4_Sid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">系級</a>
-                                <input type="text" name="member4_dep" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">手機號碼</a>
-                                <input type="text"name="member4_number"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">遊戲ID</a>
-                                <input type="text"name="member4_Gid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊員5姓名</a>
-                                <input type="text"name="member5_name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   學號</a>
-                                <input type="text" name="member5_Sid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">系級</a>
-                                <input type="text" name="member5_dep" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">手機號碼</a>
-                                <input type="text"name="member5_number"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">遊戲ID</a>
-                                <input type="text"name="member5_Gid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   隊員6(替補)姓名</a>
-                                <input type="text"name="member6_name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">   學號</a>
-                                <input type="text" name="member6_Sid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">系級</a>
-                                <input type="text" name="member6_dep" placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">手機號碼</a>
-                                <input type="text"name="member6_number"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="ui field">
-                            <div class="ui left action input">
-                                <a class="ui button">遊戲ID</a>
-                                <input type="text"name="member6_Gid"  placeholder="">
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
-                <br>
-                <input id="submit" type="submit" value="Submit" class="ui submit button"></input>
+                </div>
             </div>
-        </form>
-
-        <script>
-            jQuery(document).ready(function($) {
-                var form = jQuery('#form');
-                jQuery('#submit').click(function(e) {
-                    console.log("123");
-                    console.log(form.serializeArray());
-                    $.ajax({
-                        url: form.attr('action'),
-                        type: form.attr('method'),
-                        dataType: 'json',
-                        data: form.serializeArray(),
-                    })
-                    .done(function(data) {
-                        console.log("success");
-                        console.log(data);
-                    })
-                    .fail(function() {
-                        console.log("error");
-                    })
-                    .always(function() {
-                        console.log("complete");
-                    });
-                    e.preventDefault(); //防止做預設的動作
-                    return false;   //多重防止
-                });
-                // jQuery("#submit")
+            <div class="ui stackable grid">
+                <div class="row">
+                    <div class="eight wide column">
+                        <div class="ui raised segment">
+                            <a class="ui red ribbon label">1</a>
+                            <span class="ui teal header">隊員1</span>
+                            <!-- segment 1-->
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">姓名</a>
+                                    <input type="text" name="member1_name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">學號</a>
+                                    <input type="text" name="member1_Sid"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">系級</a>
+                                    <input type="text" name="member1_dep" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">手機</a>
+                                    <input type="text" name="member1_number"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">暱稱</a>
+                                    <input type="text" name="member1_nick"  placeholder="請填遊戲暱稱">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button" id="inp-id">UID</a>
+                                    <input type="text" name="member1_Gid"  placeholder="用來發送寶物">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="row">
+                    <div class="eight wide column">
+                        <div class="ui raised segment">
+                            <a class="ui red ribbon label">2</a>
+                            <span class="ui teal header">隊員2</span>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">姓名</a>
+                                    <input type="text" name="member2_name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">學號</a>
+                                    <input type="text" name="member2_Sid"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">系級</a>
+                                    <input type="text" name="member2_dep" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">手機</a>
+                                    <input type="text" name="member2_number"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">暱稱</a>
+                                    <input type="text" name="member2_nick"  placeholder="請填遊戲暱稱">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button" id="inp-id">UID</a>
+                                    <input type="text" name="member2_Gid"  placeholder="用來發送寶物">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="row">
+                    <div class="eight wide column">
+                        <div class="ui raised segment">
+                            <a class="ui red ribbon label">3</a>
+                            <span class="ui teal header">隊員3</span>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">姓名</a>
+                                    <input type="text" name="member3_name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">學號</a>
+                                    <input type="text" name="member3_Sid"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">系級</a>
+                                    <input type="text" name="member3_dep" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">手機</a>
+                                    <input type="text" name="member3_number"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">暱稱</a>
+                                    <input type="text" name="member3_nick"  placeholder="請填遊戲暱稱">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button" id="inp-id">UID</a>
+                                    <input type="text" name="member3_Gid"  placeholder="用來發送寶物">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  4  -->
+                <div class="row">
+                    <div class="eight wide column">
+                        <div class="ui raised segment">
+                            <a class="ui red ribbon label">4</a>
+                            <span class="ui teal header">隊員4</span>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">姓名</a>
+                                    <input type="text" name="member4_name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">學號</a>
+                                    <input type="text" name="member4_Sid"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">系級</a>
+                                    <input type="text" name="member4_dep" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">手機</a>
+                                    <input type="text" name="member4_number"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">暱稱</a>
+                                    <input type="text" name="member4_nick"  placeholder="請填遊戲暱稱">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button" id="inp-id">UID</a>
+                                    <input type="text" name="member4_Gid"  placeholder="用來發送寶物">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="row">
+                    <div class="eight wide column">
+                        <div class="ui raised segment">
+                            <a class="ui red ribbon label">5</a>
+                            <span class="ui teal header">隊員5</span>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">姓名</a>
+                                    <input type="text" name="member5_name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">學號</a>
+                                    <input type="text" name="member5_Sid"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">系級</a>
+                                    <input type="text" name="member5_dep" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">手機</a>
+                                    <input type="text" name="member5_number"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">暱稱</a>
+                                    <input type="text" name="member5_nick"  placeholder="請填遊戲暱稱">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button" id="inp-id">UID</a>
+                                    <input type="text" name="member5_Gid"  placeholder="用來發送寶物">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="row" >
+                    <div class="eight wide column">
+                        <div class="ui raised segment 6" >
+                            <a class="ui red ribbon label">6</a>
+                            <span class="ui teal header">隊員6</span>
+                            <div class="ui field " >
+                                <div class="ui left action input 6" >
+                                    <a class="ui button 6" >姓名</a>
+                                    <input type="text" name="member6_name" placeholder="" >
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">學號</a>
+                                    <input type="text" name="member6_Sid"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">系級</a>
+                                    <input type="text" name="member6_dep" placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">手機</a>
+                                    <input type="text" name="member6_number"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button">暱稱</a>
+                                    <input type="text" name="member6_nick"  placeholder="請填遊戲暱稱">
+                                </div>
+                            </div>
+                            <div class="ui field">
+                                <div class="ui left action input">
+                                    <a class="ui button" id="inp-id">UID</a>
+                                    <input type="text" name="member6_Gid"  placeholder="用來發送寶物">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
                 
-                
-            });
-        </script>
-
+            </div>
+            <br>
+            <div class="champintro-stats__info-guide page-artbtn">
+            <a type="submit" value="Submit" href="http://playlolpro.garena.tw/guide/list/champion/Teemo" class="page-artbtn__link">鎖定英雄</a>
+            </div>
+            <!-- <input id="submit" type="submit" value="Submit" class="ui submit button"></input> -->
     </div>
+    <div class="ui inverted vertical footer segment">
+                <div class="ui center aligned container">
+                <img src="http://i.imgur.com/WZsKt8x.png?1" class="ui centered mini image">
+                <div class="ui inverted section divider"><a class="nchuit" href="http://nchuit.cc/">NCHU IT</a>
+                </div>
+                <div class="ui horizontal inverted small divided link list">
+                    <a class="item" href="http://semantic-ui.com/examples/sticky.html#">00001</a>
+                    <a class="item" href="http://semantic-ui.com/examples/sticky.html#">00002</a>
+                    <a class="item" href="http://semantic-ui.com/examples/sticky.html#">00003</a>
+                    <a class="item" href="http://semantic-ui.com/examples/sticky.html#">00004</a>
+                </div>
+                </div>
+            </div>
+    </form>
+
+    <script>
+        jQuery(document).ready(function($) {
+            var form = jQuery('#form');
+            jQuery('#submit').click(function(e) {
+                console.log("123");
+                console.log(form.serializeArray());
+                $.ajax({
+                    url: form.attr('action'),
+                    type: form.attr('method'),
+                    dataType: 'json',
+                    data: form.serializeArray(),
+                })
+                .done(function(data) {
+                    console.log("success");
+                    console.log(data);
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+e.preventDefault(); //防止做預設的動作
+return false;   //多重防止
+});
+// jQuery("#submit")
+$('.ui.left.action.input.6')
+  .popup({
+    position : 'top left',
+    target   : '.ui.raised.segment.6',
+    title    : '小提醒！',
+    content  : '隊員六為候補隊員'
+  })
+;
+
+});
+    </script>
+
+</div>
 </div>
 </body>
 </html>
