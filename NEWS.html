@@ -24,18 +24,9 @@
 
 	</head>
 	<body>
-		<div class="ui stackable grid">
-	    <div class="equal widths row mynav">
-	      <div class="column"></div>
-	      <div class="column">
-	      <table width="300" height="80">
-		  </table>
-	        <div class="ui header" id="nav-title" style="padding-top: 8px;" >mark 3</div>
-	      </div>
-	      <div class="column"></div>
-	    </div>    
-	    <div class="ui ten wide column">
-	        <div class="three column row">
+		<div class="ui grid">
+		<div class="three wide column"></div>
+		<div class="ten wide column">
 	          <table class="ui celled striped table">
 	            <thead>
 	              <tr>
@@ -50,6 +41,8 @@
 		  </div>
 		</div>
 	</div>
+	</div>
+	<div class="three wide column"></div>
 
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
@@ -59,17 +52,19 @@
 	<script>
 		jQuery(document).ready(function(){
 			function myCallback(data){
-			data.reverse()
-			console.log(data);
-			var doc = data
-			doc.forEach(function(data_text) {
-			var temp = "<tr>";
-			for(var key in data_text) {
-				temp += '<td>' + data_text[key] + '</td>';
-			}
-			temp += '</tr>';
-			$(temp).appendTo("#table-content");
+				data.reverse()
+				console.log(data);
+				var doc = data
+
+				doc.forEach(function(data_text) {
+					var temp = "<tr>";
+					for(var key in data_text) {
+						temp += '<td>' + data_text[key] + '</td>';
+					}
+					temp += '</tr>';
+					$(temp).appendTo("#table-content");
 				})
+				
 		    }
 			var key = '1cM-t3znTEeOjUx8X53H6CK1OQjvP3kt9K6-efaNlDDo';
 			var soup = new SpreadsheetSoup(key, myCallback);
