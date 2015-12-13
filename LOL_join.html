@@ -320,9 +320,9 @@
             </div>
             <br>
             <div class="champintro-stats__info-guide page-artbtn">
-            <a type="submit" value="Submit" href="http://playlolpro.garena.tw/guide/list/champion/Teemo" class="page-artbtn__link">鎖定英雄</a>
+            <a type="submit" value="Submit" id="ui button" class="page-artbtn__link">我填完了</a>
             </div>
-            <!-- <input id="submit" type="submit" value="Submit" class="ui submit button"></input> -->
+            <!-- <input id="submit" type="submit" value="Submit" class="ui submit button"></input> href="http://playlolpro.garena.tw/guide/list/champion/Teemo"-->
     </div>
     <div class="ui inverted vertical footer segment">
                 <div class="ui center aligned container">
@@ -338,6 +338,37 @@
                 </div>
             </div>
     </form>
+
+    <div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            非常感謝您
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="http://www.myline.tw/images/201504/goods_img/2404_G_1429122583649.jpg">
+            </div>
+            <div class="description">
+                <div class="ui header">Thank you!</div>
+                <p>我們已經收到您的回覆.</p>
+                <p>接下來您需要做的是多多練習喔！</p>
+                <p>祝福您得冠軍呦>.<</p>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="https://nchuit.hackpad.com/1119-Ajax-GooqXzkRWn1" class="ui positive right labeled icon button">
+                填寫另一份報名表
+                <i class="repeat icon"></i>
+            </a>
+            <a href="https://nchuit.hackpad.com/1119-Ajax-GooqXzkRWn1" class="ui positive right labeled icon button">
+                回競賽首頁
+                <i class="home icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
 
     <script>
         jQuery(document).ready(function($) {
@@ -361,18 +392,22 @@
                 .always(function() {
                     console.log("complete");
                 });
-e.preventDefault(); //防止做預設的動作
-return false;   //多重防止
-});
-// jQuery("#submit")
-$('.ui.left.action.input.6')
-  .popup({
-    position : 'top left',
-    target   : '.ui.raised.segment.6',
-    title    : '小提醒！',
-    content  : '隊員六為候補隊員'
-  })
-;
+                e.preventDefault(); //防止做預設的動作
+                return false;   //多重防止
+                });
+                $('.page-artbtn__link').click(function(){
+                    $('.ui.modal')
+                    .modal('show')
+                    ;
+                });
+        // jQuery("#submit")
+                $('.ui.left.action.input.6')
+                  .popup({
+                    position : 'top left',
+                    target   : '.ui.raised.segment.6',
+                    title    : '小提醒！',
+                    content  : '隊員六為候補隊員'
+                  });
 
 });
     </script>

@@ -56,4 +56,5 @@ a.page-artbtn__link{
 .page-artbtn__link:hover, .page-artbtn__link--cur {
     background: url(http://lol.garena.tw/img/btn-blue1.png) 50% 0 no-repeat;
     text-shadow: 0 0 10px #f44104;
+    cursor: pointer
 }
