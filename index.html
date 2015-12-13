@@ -88,15 +88,76 @@
 	<!-- segment NEWS -->
 	<div id="NEWS" class="section">
 		<div class="space visible having sm"></div>
-			<div class="ui grid">
-				<div class="two wide column"></div>
-				<div class="eight wide column">NEWS</div>
-				<div class="four wide column">
-				<div id="fb-root"></div>
-				<div class="fb-page" data-href="https://www.facebook.com/bclowy/?fref=nf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bclowy/?fref=nf"><a href="https://www.facebook.com/bclowy/?fref=nf">B.C. &amp; Lowy</a></blockquote></div></div>
-				</div>
-				<div class="two wide column"></div>
-			</div>	
+				<div class="ui grid">
+						<div class="two wide column"></div>
+						<div class="eight wide column" style="border: inset">
+							<h2 class="ui header">
+							  <img src="http://semantic-ui.com/images/icons/plugin.png">
+							  <div class="content">
+							    ニュース
+							    <div class="sub header">Check out our news</div>
+							  </div>
+							</h2>
+							<div class="ui styled fluid accordion">
+							  <div class="title  active">
+							    <i class="dropdown icon"></i>
+							    『ルパン三世』新作スペシャルアニメ、1・8テレビ初放送
+							  </div>
+							  <div class="content  active">
+							    <p class="transition visible">来年1月8日の日本テレビ系『金曜ロードSHOW!』(毎週金曜 後9:00)で、テレビスペシャル『ルパン三世 イタリアン・ゲーム』を初放送することがわかった。今年10月からスタートした30年ぶりのテレビシリーズの流れをくんだ、2年ぶりのテレビスペシャルで、狙った獲物は逃がさない天下無敵の大泥棒・ルパン三世の魅力が詰まった、王道“ど真ん中”の作品を届ける。<br>今回もルパンシリーズに欠かせない孤高のガンマン・次元大介、居合抜きの達人・石川五ェ門、謎のセ...</p>
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    玉森裕太＆西内まりや 『レインツリーの国』インタビュー（21枚）
+							  </div>
+							  <div class="content">
+							    <p class="transition hidden"><img src="http://goo.gl/UBwPCu" alt="XD">（写真：片山よしお）</p>
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    What kinds of dogs are there?
+							  </div>
+							  <div class="content">
+							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    What kinds of dogs are there?
+							  </div>
+							  <div class="content">
+							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    What kinds of dogs are there?
+							  </div>
+							  <div class="content">
+							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    What kinds of dogs are there?
+							  </div>
+							  <div class="content">
+							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    How do you acquire a dog?
+							  </div>
+							  <div class="content">
+							    <p class="transition hidden">Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+							    <p class="transition hidden">A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+							  </div>
+							</div>					
+						</div>
+
+						<div class="four wide column">
+						<div id="fb-root"></div>
+						   <div class="fb-page" data-href="https://www.facebook.com/bclowy/?fref=nf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bclowy/?fref=nf"><a href="https://www.facebook.com/bclowy/?fref=nf">B.C. &amp; Lowy</a></blockquote></div></div>
+						</div>
+						<div class="two wide column"></div>
+			</div>
 		<div class="space visible having sm"></div>
 	</div>
 
@@ -342,7 +403,9 @@
 			jQuery('.special.cards .image').dimmer({
 				on: 'hover'
 			});
-
+			$('.ui.accordion')
+			  .accordion()
+			;			
 		});
 	</script>
 
