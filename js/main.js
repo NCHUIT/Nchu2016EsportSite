@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
         $(temp1).appendTo("#insert");
         // ActiveEnd
 
-        //限定新消息數量(if最多6則 else不足6則時取前6則)
+        //限定新消息數量(if最多6則，else不足6則時取前6則)
         if (data.length<=6) {
             for (var i = 1 ; i < data.length ; i++){
                 console.log(data[i])
