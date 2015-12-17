@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
 	<link rel="stylesheet" href="css/rwd.css">
 	<script src="js/facebook_pages.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="src/fun_with_svg_arcs.js"></script>
+
 
 
 </head>
@@ -98,57 +101,8 @@
 							    <div class="sub header">Check out our news</div>
 							  </div>
 							</h2>
-							<div class="ui styled fluid accordion">
-							  <div class="title  active">
-							    <i class="dropdown icon"></i>
-							    『ルパン三世』新作スペシャルアニメ、1・8テレビ初放送
-							  </div>
-							  <div class="content  active">
-							    <p class="transition visible">来年1月8日の日本テレビ系『金曜ロードSHOW!』(毎週金曜 後9:00)で、テレビスペシャル『ルパン三世 イタリアン・ゲーム』を初放送することがわかった。今年10月からスタートした30年ぶりのテレビシリーズの流れをくんだ、2年ぶりのテレビスペシャルで、狙った獲物は逃がさない天下無敵の大泥棒・ルパン三世の魅力が詰まった、王道“ど真ん中”の作品を届ける。<br>今回もルパンシリーズに欠かせない孤高のガンマン・次元大介、居合抜きの達人・石川五ェ門、謎のセ...</p>
-							  </div>
-							  <div class="title">
-							    <i class="dropdown icon"></i>
-							    玉森裕太＆西内まりや 『レインツリーの国』インタビュー（21枚）
-							  </div>
-							  <div class="content">
-							    <p class="transition hidden"><img src="http://goo.gl/UBwPCu" alt="XD">（写真：片山よしお）</p>
-							  </div>
-							  <div class="title">
-							    <i class="dropdown icon"></i>
-							    What kinds of dogs are there?
-							  </div>
-							  <div class="content">
-							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-							  </div>
-							  <div class="title">
-							    <i class="dropdown icon"></i>
-							    What kinds of dogs are there?
-							  </div>
-							  <div class="content">
-							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-							  </div>
-							  <div class="title">
-							    <i class="dropdown icon"></i>
-							    What kinds of dogs are there?
-							  </div>
-							  <div class="content">
-							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-							  </div>
-							  <div class="title">
-							    <i class="dropdown icon"></i>
-							    What kinds of dogs are there?
-							  </div>
-							  <div class="content">
-							    <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-							  </div>
-							  <div class="title">
-							    <i class="dropdown icon"></i>
-							    How do you acquire a dog?
-							  </div>
-							  <div class="content">
-							    <p class="transition hidden">Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
-							    <p class="transition hidden">A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
-							  </div>
+							<div id="insert" class="ui styled fluid accordion">
+							<!-- insert google sheet data-->
 							</div>					
 						</div>
 
@@ -362,19 +316,19 @@
 				<div class="three wide column">
 					<h4 class="ui inverted header">Group 2</h4>
 					<div class="ui inverted link list">
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link One</a>
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Two</a>
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Three</a>
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Four</a>
+						<a href="#" class="item">Link One</a>
+						<a href="#" class="item">Link Two</a>
+						<a href="#" class="item">Link Three</a>
+						<a href="#" class="item">Link Four</a>
 					</div>
 				</div>
 				<div class="three wide column">
 					<h4 class="ui inverted header">Group 3</h4>
 					<div class="ui inverted link list">
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link One</a>
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Two</a>
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Three</a>
-						<a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Four</a>
+						<a href="#" class="item">Link One</a>
+						<a href="#" class="item">Link Two</a>
+						<a href="#" class="item">Link Three</a>
+						<a href="#" class="item">Link Four</a>
 					</div>
 				</div>
 				<div class="seven wide column">
@@ -385,10 +339,10 @@
 			<div class="ui inverted section divider"></div>
 			<img src="http://i.imgur.com/Tc4VdO8.jpg" class="ui centered mini image">
 			<div class="ui horizontal inverted small divided link list">
-				<a class="item" href="http://semantic-ui.com/examples/sticky.html#">Site Map</a>
-				<a class="item" href="http://semantic-ui.com/examples/sticky.html#">Contact Us</a>
-				<a class="item" href="http://semantic-ui.com/examples/sticky.html#">Terms and Conditions</a>
-				<a class="item" href="http://semantic-ui.com/examples/sticky.html#">Privacy Policy</a>
+				<a class="item" href="#">Site Map</a>
+				<a class="item" href="#">Contact Us</a>
+				<a class="item" href="#">Terms and Conditions</a>
+				<a class="item" href="#">Privacy Policy</a>
 			</div>
 		</div>
 	</div>
@@ -398,31 +352,8 @@
 	
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
-	<script>
-		jQuery(document).ready(function(){
-			jQuery('.special.cards .image').dimmer({
-				on: 'hover'
-			});
-			$('.ui.accordion')
-			  .accordion()
-			;			
-		});
-	</script>
+	<script src="js/spreadsheetSoup.js"></script>
+	<script src="js/main.js"></script>
 
-	<script>
-	jQuery(document).ready(function(){
-		$('.ui.inverted.button').click(function(){
-			$('.ui.modal.LOL')
-			.modal('show')
-			;
-		});
-
-		$('.ui.primary.button').click(function(){
-			$('.ui.modal.HS')
-			.modal('show')
-			;
-		});
-	});
-	</script>
 </body>
 </html>
