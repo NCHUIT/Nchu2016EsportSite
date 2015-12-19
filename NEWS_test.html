@@ -1,0 +1,122 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>test news</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+		<script src="http://cdn.bootcss.com/semantic-ui/2.1.6/semantic.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+
+
+	</head>
+	<body>
+
+		<div class="ui header" id="nav-title" style="padding-top: 8px;" >最新消息</div>
+
+		<div class="ui styled fluid accordion">
+			<!-- insert -->
+			<div class="title active">
+				<i class="dropdown icon"></i>
+				title1 act
+			</div>
+			<div class="content active">
+				<p class="transition visible">cont1 act</p>
+			</div>
+ 			<!-- insert -->
+			<div class="title">
+				<i class="dropdown icon"></i>
+				wefwf
+			</div>
+			<div class="content">
+				<h1><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg" /> Apollo 11</h1>
+
+				<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="http://en.wikipedia.org/wiki/Neil_Armstrong">Neil Armstrong</a> and <a href="http://en.wikipedia.org/wiki/Buzz_Aldrin">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 0<s>2:56 UTC.</s></p>
+
+				<p>Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="http://en.wikipedia.org/wiki/Michael_Collins_(astronaut)">Michael Collins</a>, piloted the <a href="http://en.wikipedia.org/wiki/Apollo_Command/Service_Module">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+
+				<h2>&nbsp;</h2>
+
+			</div>
+		</div>		
+
+
+		<div class="ui stackable grid">
+	    <div class="equal widths row mynav">
+	      <div class="column"></div>
+	      <div class="column">
+	      <table width="300" height="80">
+		  </table>
+	        <div class="ui header" id="nav-title" style="padding-top: 8px;" >最新消息</div>
+	      </div>
+	      <div class="column"></div>
+	    </div>    
+	    <div class="ui ten wide column">
+	        <div class="three column row">
+	          <table class="ui celled striped table">
+	            <thead>
+	              <tr>
+	                <th>標題</th>
+	                <th>內容</th>
+	              </tr>
+	            </thead>
+	        	<tbody id="table-content"></tbody>
+		      </table>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	</div>
+	<div class="three wide column"></div>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+	<script src="js/spreadsheetSoup.js"></script>
+
+​
+	<script>
+		var debug;                                          //將data拿出來用，可以用開發者工具demo程式
+		jQuery(document).ready(function(){
+			jQuery('.special.cards .image').dimmer({
+				on: 'hover'
+			});
+			$('.ui.accordion')
+			.accordion()
+			;			
+		});		
+
+		jQuery(document).ready(function(){
+			function myCallback(data){
+				data.reverse();
+				debug = data;                               //把data提到debug
+				console.log(data);
+				var doc = data
+				var i
+				console.log(doc[i])
+				for (var i = 0 ; i < doc.length ; i++){
+					console.log(doc[i])
+					var temp = '<div class="title"><i class="dropdown icon"></i>';	
+					temp += doc[i].title+'</div>' ;
+					temp += '<div class="content"><p>' + doc[i].content + '</p></div>';
+					$(temp).appendTo(".fluid.accordion");
+				}
+
+
+				doc.forEach(function(data_text) {
+					var temp = "<tr>";
+					for(var key in data_text) {
+						temp += '<td>' + data_text[key] + '</td>';
+					}
+					temp += '</tr>';
+					$(temp).appendTo("#table-content");
+				})
+				
+			}
+			var key = '1o3E8f8vD0tUWm2Ls-RZqsjzgCDEx-_IhNl2QtKii9Uk';
+			var soup = new SpreadsheetSoup(key, myCallback);
+
+		});
+
+	</script>
+
+</body>
+</html>

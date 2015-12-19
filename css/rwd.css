@@ -12,6 +12,12 @@
     background-size: cover;
 }
 
+#insert {
+    border: inset;
+    height: 405px;
+    overflow-y: scroll;
+}
+
 #detail {
     background:-webkit-linear-gradient(#85BEE8,#14476D);
 }
