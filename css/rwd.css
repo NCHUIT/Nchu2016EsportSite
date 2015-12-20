@@ -6,11 +6,13 @@
     background-size: cover;
 }
 
+
 #NEWS {
     background-image: url("http://i.imgur.com/v9GProF.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
+
 
 #insert {
     border: inset;
