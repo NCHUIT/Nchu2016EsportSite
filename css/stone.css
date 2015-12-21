@@ -1,6 +1,6 @@
 /*loljoin*/
 .backgroundlol{
-background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg");
+background-image: url("../img/blackmountain.png");
 background-attachment: fixed;
 background-size: cover;
 }
@@ -21,7 +21,7 @@ background-size: cover;
 	background: rgba(253, 236, 202, 0.76);
 }
 .ui.button{
-	background: rgba(45, 19, 8, 0.76);
+	background: rgba(47, 33, 186, 0.69);
 	color: #db2828;
 }
 .ui.divider:not(.vertical):not(.horizontal) {
@@ -45,13 +45,13 @@ a{
     text-align: center;
     display: block;
     height: 40px;
-    background: url(http://lol.garena.tw/img/btn-orange1.png) 50% 0 no-repeat;
+    background: #BC22C7;
     font: 16px/40px Helvetica, 'Microsoft JhengHei';
     text-shadow: 0 0 10px #0f6185;
-    /*margin-bottom: 20px;*/
+    margin-bottom: 20px;
 }
 #lolSubmit:hover, #lolSubmit--cur {
-    background: url(http://lol.garena.tw/img/btn-blue1.png) 50% 0 no-repeat;
+    background: linear-gradient(to bottom, #f756fe, #c84bd6 5%, #7305ae 59%, #661f91);
     text-shadow: 0 0 10px #f44104;
     cursor: pointer
 }
@@ -63,4 +63,7 @@ a{
 }
 .ui.selection.dropdown{
     background: rgba(253, 236, 202, 0.76)!important;
+}
+.ui.inverted.segment{
+    margin-top: 108px !important;
 }
