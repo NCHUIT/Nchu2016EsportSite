@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
 	<link rel="stylesheet" href="css/rwd.css">
 	<script src="js/facebook_pages.js"></script>
+	<script src="http://demonstration.abgne.tw/jquery/plugins/0118/js/jquery.tubular.js"></script>
 
 </head>
 <body>
@@ -27,27 +28,75 @@
 			<a class="item">
 				<i class="large mail icon"></i><strong>Messages</strong>
 			</a>
-			<div class="ui simple dropdown item">
-				More
-				<i class="dropdown icon"></i>
-				<div class="menu">
-					<a class="item"><i class="edit icon"></i>Edit Profile</a>
-					<a class="item"><i class="globe icon"></i> Choose Language</a>
-					<a class="item"><i class="settings icon"></i> Account Settings</a>
-				</div>
-			</div>
+
 			<div class="right item">
 				<div class="ui input"><input type="text" placeholder="Search..."></div>
 			</div>
 		</div>
 	</div>
 
-	<!-- segment 1 intro-->
-	<div class="frame curtain">
-	<div id="intro" class="section">
+	<!-- segment-1 logo & sponsor-->
+	<div id="logo" class="section">
 		<div class="space visible having sm"></div>
 					<img src="img/LOGO.gif" alt="logo" style="max-width: 16%; display:block; margin:auto;">
 					<h1 style="text-align:center">2016 清流盃</h1>
+				<!-- sponsor showcase -->
+			<div class="ui grid">
+				<div class="two wide column"></div>
+				<div class="twelve wide column">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+					<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
+
+				</div>
+				<div class="two wide column"></div>
+			</div>
+		<div class="space visible having sm"></div>
+	</div>
+
+	<!-- segment-2 NEWS -->
+	<div id="NEWS" class="section">
+		<div class="space visible having sm"></div>
+				<div class="ui grid">
+						<div class="two wide column"></div>
+						<div class="eight wide column" style="border: inset">
+							<h2 class="ui header">
+							  <i class="newspaper icon"></i>
+							  <div class="content">
+							    ニュース
+							    <div class="sub header">Check out our news</div>
+							  </div>
+							</h2>
+							<div id="insert" class="ui styled fluid accordion">  <!-- backend:https://goo.gl/FFWZdn -->
+							<!-- insert google sheet data-->
+							</div>	
+							<a href="ALL_NEWS.html">
+							<button class="fluid ui button">查看所有消息</button></a>
+						</div>
+
+						<div class="four wide column">
+						<div id="fb-root"></div>
+						   <div class="fb-page" data-href="https://www.facebook.com/bclowy/?fref=nf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bclowy/?fref=nf"><a href="https://www.facebook.com/bclowy/?fref=nf">B.C. &amp; Lowy</a></blockquote></div></div>
+						</div>
+						<div class="two wide column"></div>
+			</div>
+		<div class="space visible having sm"></div>
+	</div>
+
+	<!-- segment-3 intro games table -->
+	<div id="intro" class="section">
+		<div class="space visible having sm"></div>
 				<!-- 4 games intro table -->
 			<div class="ui grid">
 				<div class="two wide column"></div>
@@ -77,43 +126,11 @@
 				</div>
 				<div class="two wide column"></div>
 			</div>
-			<img class="garena01" src="img/Garena01.png" alt="Garena01" style="max-width: 14%;">
-		<div class="space visible having sm"></div>
-	</div>
-	</div>
-
-	<!-- segment NEWS -->
-	<div id="NEWS" class="section">
-		<div class="space visible having sm"></div>
-				<div class="ui grid">
-						<div class="two wide column"></div>
-						<div class="eight wide column" style="border: inset">
-							<h2 class="ui header">
-							  <i class="newspaper icon"></i>
-							  <div class="content">
-							    ニュース
-							    <div class="sub header">Check out our news</div>
-							  </div>
-							</h2>
-							<div id="insert" class="ui styled fluid accordion">  <!-- backend:https://goo.gl/FFWZdn -->
-							<!-- insert google sheet data-->
-							</div>	
-							<a href="ALL_NEWS.html">
-							<button class="fluid ui button">查看所有消息</button></a>
-						</div>
-
-						<div class="four wide column">
-						<div id="fb-root"></div>
-						   <div class="fb-page" data-href="https://www.facebook.com/bclowy/?fref=nf" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bclowy/?fref=nf"><a href="https://www.facebook.com/bclowy/?fref=nf">B.C. &amp; Lowy</a></blockquote></div></div>
-						</div>
-						<div class="two wide column"></div>
-			</div>
 		<div class="space visible having sm"></div>
 	</div>
 
-<!-- 123s -->
 
-	<!-- segment 2 detail -->
+	<!-- segment-4 detail -->
 	<div id="detail" class="section">
 		<div class="space visible having sm"></div>
 		<div class="ui middle aligned stackable grid container">
@@ -291,10 +308,10 @@
 				</div>	
 			</div>
 			<div class="two wide column"></div>
-		</div>
+		
 
 		<div class="space visible having sm"></div>
-	</div>
+</div>
 
   <!-- all of segments end -->
 
