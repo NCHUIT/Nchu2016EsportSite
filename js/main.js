@@ -1,5 +1,100 @@
-
 jQuery(document).ready(function(){
+      //control the top sidebar menu
+      $("#mbutton").on({
+        mouseenter: function(){
+          $(this).addClass('animated jello');
+        },
+        mouseleave: function(){
+          $(this).removeClass("animated jello");
+        },
+        click: function(){
+          $('.ui.sidebar')
+          .sidebar('setting', 'transition', 'push')
+          .sidebar('toggle') ;
+        }
+      });
+
+      //control the top sidebar menu's items
+      //logo
+      $("#mit1").on({
+        mouseenter: function(){
+          $(this).addClass("active purple");
+        },
+        mouseleave: function(){
+          $(this).removeClass("active purple");
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('#logo').offset().top},600);
+        }
+      });
+      // NEWS
+      $("#mit2").on({
+        mouseenter: function(){
+          $(this).addClass("active orange");
+        },
+        mouseleave: function(){
+          $(this).removeClass("active orange");
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('#NEWS').offset().top},600);
+        }
+      });
+      // 4 games intro
+      $("#mit3").on({
+        mouseenter: function(){
+          $(this).addClass("active teal");
+        },
+        mouseleave: function(){
+          $(this).removeClass("active teal");
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('#intro').offset().top},600);
+        }
+      });
+
+      // detail
+      $("#mit4").on({
+        mouseenter: function(){
+          $(this).addClass("active yellow");
+        },
+        mouseleave: function(){
+          $(this).removeClass("active yellow");
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('#detail').offset().top},600);
+        }
+      });
+
+      // report
+      $("#mit5").on({
+        mouseenter: function(){
+          $(this).addClass("active green");
+        },
+        mouseleave: function(){
+          $(this).removeClass("active green");
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('#report').offset().top},600);
+        }
+      });
+
+      //control scroll back to top button
+      $("#gotopbutton").on({
+        mouseenter: function(){
+          $(this).addClass('animated shake');
+        },
+        mouseleave: function(){
+          $(this).removeClass('animated shake');
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('#logo').offset().top},600);
+        }
+      });
+
+
+
+
+    //report card dimmer
     jQuery('.special.cards .image').dimmer({
         on: 'hover'
     });
@@ -45,28 +140,28 @@ jQuery(document).ready(function(){
 
 
 
-//彈跳視窗
-$('.ui.inverted.button').click(function(){
-    $('.ui.modal.LOL')
-    .modal('show')
-    ;
-});
+    //彈跳視窗
+    $('.ui.inverted.button').click(function(){
+        $('.ui.modal.LOL')
+        .modal('show')
+        ;
+    });
 
 
-$('.ui.primary.button').click(function(){
-    $('.ui.modal.HS')
-    .modal('show')
-    ;
-});
+    $('.ui.primary.button').click(function(){
+        $('.ui.modal.HS')
+        .modal('show')
+        ;
+    });
 
 
-// Logo附著效果
-// $('.garena01')
-//   .transition('scale')
-// ;
-$('.garena01').click(function(){
-  $(this).transition('scale');
-});
+    // Logo附著效果
+    // $('.garena01')
+    //   .transition('scale')
+    // ;
+    $('.garena01').click(function(){
+      $(this).transition('scale');
+    });
 
 
 });

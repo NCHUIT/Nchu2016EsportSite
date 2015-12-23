@@ -1,7 +1,25 @@
 /*decoration&rwd of index.html*/
 
+/*navbar*/
+#mbutton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index:20;
+    cursor: pointer;
+}
+
+#gotopbutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index:20;
+    cursor: pointer;
+}
+
+
 #logo {
-    background-image: url("https://i.imgur.com/WcUvQsz.jpg");
+    background-image: url("https://i.ytimg.com/vi/dT371gpwBUU/maxresdefault.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
