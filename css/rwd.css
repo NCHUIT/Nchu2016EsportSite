@@ -19,9 +19,13 @@
 
 
 #logo {
-    background-image: url("https://i.ytimg.com/vi/dT371gpwBUU/maxresdefault.jpg");
+    background-image: url("http://i.imgur.com/2StGvnQ.jpg");
     background-attachment: fixed;
     background-size: cover;
+}
+
+.ui.sponsor.segment {
+    background: rgba(232, 236, 241, 0.31);
 }
 
 #intro {
@@ -49,7 +53,7 @@
 }
 
 #report {
-    background-image: url("http://www.psdgraphics.com/file/abstract-mosaic-background.png");
+    background-image: url("http://i.imgur.com/hPHxDd1.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -69,16 +73,8 @@
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.ui.top.fixed.menu{
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
 .ui.segment{
     background: rgba(0, 37, 77, 0.31);
-}
-
-.top.fixed.menu{
-    height: 55px;
 }
 
 
@@ -142,4 +138,5 @@
         display: none;
     }
 }
+
 
