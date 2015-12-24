@@ -159,6 +159,12 @@ jQuery(document).ready(function(){
         ;
     });
 
+    $('.ui.secondary.button').click(function(){
+        $('.ui.modal.minigame')
+        .modal('show')
+        ;
+    });
+
 
     // Logo附著效果
     // $('.garena01')

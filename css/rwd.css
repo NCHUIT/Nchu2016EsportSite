@@ -139,4 +139,13 @@
     }
 }
 
-
+/*@media (min-width: 700px){
+  .fb-side-330px-580px-container .fb-left {
+    margin-right: 280px;
+  }
+  .fb-side-330px-580px-container .fb-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}*/
