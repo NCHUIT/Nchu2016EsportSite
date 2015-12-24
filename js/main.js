@@ -102,6 +102,11 @@ jQuery(document).ready(function(){
     .accordion()
     ;   
 
+    //Regulation menu
+    $('.menu .item')
+      .tab()
+    ;    
+
     function myCallback(data){
         data.reverse();
         console.log(data);
