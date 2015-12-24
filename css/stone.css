@@ -1,15 +1,20 @@
 /*loljoin*/
 .backgroundlol{
-background-image: url("../img/blackmountain.png");
+background-image: url("../img/blackmount.png");
 background-attachment: fixed;
 background-size: cover;
+background-position: center center;
+}
+.ui.column{
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .ui.segment{
     background: rgba(34, 36, 38, 0.1);
     border: 1px solid #B5CC18;
 }
 .ui.inverted.teal.segment {
-    margin: 23px;
+    margin: 23px 23px 23px 23px;
 }
 .ui.inverted.segment{
     background: rgb(60, 64, 68);
@@ -37,7 +42,8 @@ a{
 #lolSubmit {
     color: white;
     padding: 0px 0px;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 15px;
     border: 1px solid #B5CC18;
     border-radius: 0.3rem;
@@ -65,5 +71,9 @@ a{
     background: rgba(253, 236, 202, 0.76)!important;
 }
 .ui.inverted.segment{
-    margin-top: 108px !important;
+    margin-top: 115px !important;
+}
+.ui.teal.inverted.segment{
+    margin-top: 110px !important;
+    text-align: center;
 }
