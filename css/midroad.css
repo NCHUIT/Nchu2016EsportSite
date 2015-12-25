@@ -1,0 +1,79 @@
+/*loljoin*/
+.backgroundlol{
+background-image: url("../img/midroad.png");
+background-attachment: fixed;
+background-size: cover;
+background-position: center center;
+}
+.ui.column{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.ui.segment{
+    background: rgba(34, 36, 38, 0.1);
+    border: 1px solid #B5CC18;
+}
+.ui.inverted.teal.segment {
+    margin: 23px 23px 23px 23px;
+}
+.ui.inverted.segment{
+    background: rgb(60, 64, 68);
+}
+#inp-id{
+	padding: 11px 22px;
+}
+.ui.form.ui.form input[type=text]{
+	background: rgba(253, 236, 202, 0.76);
+}
+.ui.button{
+	background: rgba(47, 33, 186, 0.69);
+	color: #db2828;
+}
+.ui.divider:not(.vertical):not(.horizontal) {
+    border: none;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+a{   
+	color: #3CEA65;
+}
+/*button*/
+#lolSubmit {
+    color: white;
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border: 1px solid #B5CC18;
+    border-radius: 0.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    height: 40px;
+    background: #BC22C7;
+    font: 16px/40px Helvetica, 'Microsoft JhengHei';
+    text-shadow: 0 0 10px #0f6185;
+    margin-bottom: 20px;
+}
+#lolSubmit:hover, #lolSubmit--cur {
+    background: linear-gradient(to bottom, #f756fe, #c84bd6 5%, #7305ae 59%, #661f91);
+    text-shadow: 0 0 10px #f44104;
+    cursor: pointer
+}
+.ui.dropdown>.default.text{
+    color: rgb(230, 10, 10);
+}
+.ui.search.dropdown{
+    background: rgba(253, 236, 202, 0.76)!important;
+}
+.ui.selection.dropdown{
+    background: rgba(253, 236, 202, 0.76)!important;
+}
+.ui.inverted.segment{
+    margin-top: 115px !important;
+}
+.ui.teal.inverted.segment{
+    margin-top: 110px !important;
+    text-align: center;
+}

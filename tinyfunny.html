@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/LOGO.gif">
-        <link rel="stylesheet" href="css/stone.css">
+        <link rel="stylesheet" href="css/tiny.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,11 +14,11 @@
     <body class="backgroundlol">
         <div class="ui container">
             <div class="ui stackable grid">
-            <div class="eight wide column">
-                <div class="ui teal inverted segment">
-                    <h3>2016唯一信癢Χ清流盃爐石戰記大賽報名表</h3>
+                <div class="eight wide column">
+                    <div class="ui yellow inverted segment">
+                        <h3>2016唯一信癢Χ清流盃小遊戲大成就報名表</h3>
+                    </div>
                 </div>
-            </div>
             </div>
             <form id="myform" class="ui form">
                 <div class="ui stackable grid">
@@ -26,8 +26,8 @@
                     <div class="row">
                         <div class="eight wide column">
                             <div class="ui raised segment">
-                                <a class="ui red ribbon label">贏家</a>
-                                <span class="ui teal header">就是我</span>
+                                <a class="ui pink ribbon label"><h4>贏家</h4></a>
+                                <span class="ui yellow header">就是我</span>
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">我叫</a>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="row">
                         <div class="eight wide column">
-                                <div id="lolSubmit" class="ui submit button " style="width: 162px;">我填完了</div>
+                            <div id="lolSubmit" class="ui submit button " style="width: 162px;">我填完了</div>
                         </div>
                     </div>
                 </div>
@@ -203,63 +203,62 @@
                             });
                             // form field rule
                             var player_rule_fields = {
+                            	member1_name: {
+                            		identifier: 'member1_name',
+                            		rules: [
+                            		{
+                            			type   : 'empty',
+                            			prompt : 'Please enter your 姓名'
+                            		}
+                            		]
+                            	},
+                            	member1_Sid: {
+                            	    identifier: 'member1_Sid',
+                            	    rules: [
+                            	    {
+                            	        type   : 'empty',
+                            	        prompt : 'Please enter your 學號'
+                            	    }
+                            	    ]
+                            	},
+                            	member1_Pnumber: {
+                            	    identifier: 'member1_Pnumber',
+                            	    rules: [
+                            	    {
+                            	        type   : 'empty',
+                            	        prompt : 'Please enter your 手機'
+                            	    }
+                            	    ]
+                            	},
+                            	member1_nick: {
+                            	    identifier: 'member1_nick',
+                            	    rules: [
+                            	    {
+                            	        type   : 'empty',
+                            	        prompt : 'Please enter your 帳號'
+                            	    }
+                            	    ]
+                            	},
+                            	member1_dep: {
+                            	    identifier: 'member1_dep',
+                            	    rules: [
+                            	    {
+                            	        type   : 'empty',
+                            	        prompt : 'Please select your 系所'
+                            	    }
+                            	    ]
+                            	},
+                            	member1_grade: {
+                            	    identifier: 'member1_grade',
+                            	    rules: [
+                            	    {
+                            	        type   : 'empty',
+                            	        prompt : 'Please select your 年級'
+                            	    }
+                            	    ]
+                            	},
                             };
-                            for (var i = 1; i <= 1; i++) {
-                                player_rule_fields['member' + i + '_name'] = {
-                                    identifier: 'member' + i +'_name',
-                                    rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please enter your 隊員' + i +'姓名',
-                                    }
-                                    ]
-                                };
-                                player_rule_fields['member' + i + '_Sid'] = {
-                                    identifier: 'member' + i +'_Sid',
-                                    rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please enter your 隊員' + i +'學號',
-                                    }
-                                    ]
-                                };
-                                player_rule_fields['member' + i + '_Pnumber'] = {
-                                    identifier: 'member' + i +'_Pnumber',
-                                    rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please enter your 隊員' + i +'手機',
-                                    }
-                                    ]
-                                };
-                                player_rule_fields['member' + i + '_nick'] = {
-                                    identifier: 'member' + i +'_nick',
-                                    rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please enter your 隊員' + i +'帳號',
-                                    }
-                                    ]
-                                };
-                                player_rule_fields['member' + i + '_dep'] = {
-                                    identifier: 'member' + i +'_dep',
-                                    rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please select your 隊員' + i +'系所',
-                                    }
-                                    ]
-                                };
-                                player_rule_fields['member' + i + '_grade'] = {
-                                    identifier: 'member' + i +'_grade',
-                                    rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please select your 隊員' + i +'年級',
-                                    }
-                                    ]
-                                };
-                            }
+                            
                             var submitfun = function(event){
                                 $('#dimmer').dimmer('show');
                             // console.log(event);
@@ -309,9 +308,10 @@
                                 on: 'focus'
                             });
                             $('#combo_dropdown')
-                              .dropdown({action: 'combo'});
+                            .dropdown({action: 'combo'});
                         });
             </script>
         </div>
-</body>
+
+    </body>
 </html>
