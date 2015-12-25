@@ -10,21 +10,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>2016 中興校園電競賽</title>
-        <style>
-                .section {
-                    padding: 20px 0;
-                }
-                .space {
-                    height: 120px;
-                }
-        </style>
     </head>
     <body class="backgroundlol">
         <div class="ui container">
             <div class="ui stackable grid">
+            <div class="eight wide column">
                 <div class="ui teal inverted segment">
                     <h3 >2016唯一信癢Χ清流盃LOL大賽報名表</h3>
                 </div>
+            </div>
             </div>
             <form id="myform" class="ui form">
                 <div class="ui stackable grid">
@@ -304,9 +298,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="eight wide column">
+                                <div id="lolSubmit" class="ui submit button " style="width: 162px;">我填完了</div>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <div id="lolSubmit" class="ui submit button " style="width: 162px;">我填完了</div>
                 <div class="ui error message"></div>
             </form>
             <div class="ui inverted vertical footer segment">
@@ -524,7 +521,7 @@
                         rules: [
                         {
                             type   : 'empty',
-                            prompt : 'Please select your 隊員' + i +'的帳號',
+                            prompt : 'Please enter your 隊員' + i +'的帳號',
                         }
                         ]
                     };
@@ -584,6 +581,5 @@
             });
             </script>
         </div>
-    </div>
 </body>
 </html>

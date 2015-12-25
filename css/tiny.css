@@ -1,6 +1,6 @@
-/*loljoin*/
+/*tiny*/
 .backgroundlol{
-background-image: url("../img/blackmount.png");
+background-image: url("../img/pikaju.jpg");
 background-attachment: fixed;
 background-size: cover;
 background-position: center center;
@@ -23,11 +23,11 @@ background-position: center center;
 	padding: 11px 22px;
 }
 .ui.form.ui.form input[type=text]{
-	background: rgba(253, 236, 202, 0.76);
+	background: rgba(255,255,255,0.9);
 }
 .ui.button{
-	background: rgba(47, 33, 186, 0.69);
-	color: #db2828;
+	background: rgb(28, 7, 236);
+	color: rgb(162, 219, 40);
 }
 .ui.divider:not(.vertical):not(.horizontal) {
     border: none;
@@ -37,6 +37,10 @@ background-position: center center;
 }
 a{   
 	color: #3CEA65;
+}
+.ui.yellow.header{
+    text-shadow: 0 0 11px rgba(0,0,0,.85);
+    font-size: x-large;
 }
 /*button*/
 #lolSubmit {
@@ -62,18 +66,15 @@ a{
     cursor: pointer
 }
 .ui.dropdown>.default.text{
-    color: rgb(230, 10, 10);
+    color: rgb(94, 104, 195);
 }
 .ui.search.dropdown{
-    background: rgba(253, 236, 202, 0.76)!important;
-}
-.ui.selection.dropdown{
-    background: rgba(253, 236, 202, 0.76)!important;
+    background: rgba(255,255,255,0.9)!important;
 }
 .ui.inverted.segment{
     margin-top: 115px !important;
 }
-.ui.teal.inverted.segment{
+.ui.yellow.inverted.segment{
     margin-top: 110px !important;
     text-align: center;
 }
