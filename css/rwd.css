@@ -140,3 +140,26 @@
 }
 
 
+
+.fb-side-330px-580px-container {
+  position: relative;
+  min-height: 580px;
+}
+.fb-side-330px-580px-container .fb-right {
+  text-align: center;
+}
+.fb-page.fb_iframe_widget {
+  border: rgba(0,0,0,.4) solid 5px;
+  border-radius: 5px;
+}
+
+@media (min-width: 700px){
+  .fb-side-330px-580px-container .fb-left {
+    margin-right: 280px;
+  }
+  .fb-side-330px-580px-container .fb-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
