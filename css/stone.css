@@ -10,7 +10,7 @@ background-position: center center;
     margin-right: auto !important;
 }
 .ui.segment{
-    background: rgba(34, 36, 38, 0.1);
+    background: rgba(255, 255, 255, 0.89);
     border: 1px solid #B5CC18;
 }
 .ui.inverted.teal.segment {
@@ -76,4 +76,7 @@ a{
 .ui.teal.inverted.segment{
     margin-top: 110px !important;
     text-align: center;
+}
+.blur{
+    background: rgba(0, 37, 77, 0.05);
 }
