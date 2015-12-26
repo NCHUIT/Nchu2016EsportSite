@@ -77,6 +77,10 @@
     background: rgba(0, 37, 77, 0.31);
 }
 
+.card {
+    text-align: center;
+}
+
 
 /* rwd */
 @media (min-width: 700px){
