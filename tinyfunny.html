@@ -13,7 +13,7 @@
     </head>
     <body class="backgroundlol">
         <div class="ui container">
-            <div class="ui stackable grid">
+            <div class="ui centered stackable grid">
                 <div class="eight wide column">
                     <div class="ui yellow inverted segment">
                         <h3>2016唯一信癢Χ清流盃小遊戲大成就報名表</h3>
@@ -21,7 +21,35 @@
                 </div>
             </div>
             <form id="myform" class="ui form">
-                <div class="ui stackable grid">
+            	<!-- gameselect -->
+                <div class="ui centered stackable grid">
+                	<div class="row">
+                		<div class="eight wide column">
+                			<div class="ui raised segment" id="gameselect">
+                				<div class="inline fields">
+                					<label style="color:springgreen; font-size:large;">你想玩哪一種?</label>
+                					<div class="field">
+                						<div class="ui radio checkbox">
+                							<input type="radio" name="game" value="volley">
+                							<label style="color:aqua;font-size:large;">打排球</label>
+                						</div>
+                					</div>
+                					<div class="field">
+                						<div class="ui radio checkbox">
+                							<input type="radio" name="game" value="stair">
+                							<label style="color:aqua;font-size:large;">下樓梯</label>
+                						</div>
+                					</div>
+                					<div class="field">	
+                						<div class="ui radio checkbox">
+                							<input type="radio" name="game" value="both">
+                							<label style="color:aqua;font-size:large;">我都要</label>
+                						</div>
+                					</div>
+                				</div>
+                			</div>
+                		</div>
+                	</div>
                     <!-- 1 -->
                     <div class="row">
                         <div class="eight wide column">
@@ -31,13 +59,13 @@
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">我叫</a>
-                                        <input type="text" name="member1_name" placeholder="">
+                                        <input type="text" name="member1_name">
                                     </div>
                                 </div>
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">學號</a>
-                                        <input type="text" name="member1_Sid"  placeholder="">
+                                        <input type="text" name="member1_Sid">
                                     </div>
                                 </div>
                                 <div class="two fields">
@@ -47,13 +75,13 @@
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">手機</a>
-                                        <input type="text" name="member1_Pnumber"  placeholder="">
+                                        <input type="text" name="member1_Pnumber">
                                     </div>
                                 </div>
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">帳號</a>
-                                        <input type="text" name="member1_nick"  placeholder="請填遊戲帳號">
+                                        <input type="text" name="member1_nick" placeholder="請填遊戲帳號">
                                     </div>
                                 </div>
                             </div>
@@ -203,6 +231,15 @@
                             });
                             // form field rule
                             var player_rule_fields = {
+                            	game: {
+                            	    identifier: 'game',
+                            	    rules: [
+                            	    {
+                            	        type   : 'checked',
+                            	        prompt : 'Please select the 遊戲 you want to participate in.'
+                            	    }
+                            	    ]
+                            	},
                             	member1_name: {
                             		identifier: 'member1_name',
                             		rules: [
@@ -256,7 +293,7 @@
                             	        prompt : 'Please select your 年級'
                             	    }
                             	    ]
-                            	},
+                            	}
                             };
                             
                             var submitfun = function(event){
@@ -266,6 +303,7 @@
                             var members = [];
                             for (var i = 1; i <= 1; i++) {
                                 members.push({
+                                	game: jQuery("input[name=game]:checked").val(),
                                     name: jQuery("input[name=member" + i +"_name]").val(),
                                     dep: jQuery("select[name=member" + i +"_dep]").val(),
                                     grade: jQuery("select[name=member" + i +"_grade]").val(),
@@ -278,7 +316,7 @@
                                 members: members
                             };
                             $('#lolSubmit').addClass("disabled");
-                            var api = "https://script.google.com/macros/s/AKfycbyiODubufuxi9nVgUh2Kwy0VzTktTWoJ7IvDpMFhfSuP4gk5_yA/exec";
+                            var api = "https://script.google.com/macros/s/AKfycbzY_zcG2UEtcpYC8eznOmiliAbD2Q3gPs0JL5TMWO_SkcmQFBo/exec";
                             $.ajax({
                                 url: api,
                                 dataType: 'jsonp',
