@@ -142,7 +142,6 @@ jQuery(document).ready(function(){
 
 
 
-
     //彈跳視窗
     $('.ui.inverted.button').click(function(){
         $('.ui.modal.LOL')
