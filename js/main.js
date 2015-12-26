@@ -134,8 +134,7 @@ jQuery(document).ready(function(){
                 $(temp).appendTo("#insert");
             }                    
         }
-
-        
+     
     }
     var key = '1o3E8f8vD0tUWm2Ls-RZqsjzgCDEx-_IhNl2QtKii9Uk';
     var soup = new SpreadsheetSoup(key, myCallback);
