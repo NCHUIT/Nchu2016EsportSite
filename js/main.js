@@ -135,8 +135,6 @@ jQuery(document).ready(function(){
             }                    
         }
 
-
-
         
     }
     var key = '1o3E8f8vD0tUWm2Ls-RZqsjzgCDEx-_IhNl2QtKii9Uk';
