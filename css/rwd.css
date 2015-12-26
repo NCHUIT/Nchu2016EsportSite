@@ -52,8 +52,8 @@
     background:-webkit-linear-gradient(#85BEE8,#14476D);
 }
 
-.ui.circular.image.animate {
-    max-width: 79%;
+.ui.grid>.row>.column>img, .ui.grid>.row>img {
+    max-width: 50%;
 }
 
 #report {
