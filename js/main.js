@@ -102,6 +102,11 @@ jQuery(document).ready(function(){
     .accordion()
     ;   
 
+    //Regulation menu
+    $('.menu .item')
+      .tab()
+    ;    
+
     function myCallback(data){
         data.reverse();
         console.log(data);
@@ -150,6 +155,12 @@ jQuery(document).ready(function(){
 
     $('.ui.primary.button').click(function(){
         $('.ui.modal.HS')
+        .modal('show')
+        ;
+    });
+
+    $('.ui.secondary.button').click(function(){
+        $('.ui.modal.minigame')
         .modal('show')
         ;
     });
