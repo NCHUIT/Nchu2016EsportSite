@@ -52,6 +52,10 @@
     background:-webkit-linear-gradient(#85BEE8,#14476D);
 }
 
+.ui.circular.image.animate {
+    max-width: 79%;
+}
+
 #report {
     background-image: url("http://i.imgur.com/hPHxDd1.jpg");
     background-attachment: fixed;
