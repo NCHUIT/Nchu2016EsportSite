@@ -140,6 +140,34 @@ jQuery(document).ready(function(){
     var soup = new SpreadsheetSoup(key, myCallback);
 
 
+    // Regulation GET
+    var api = "https://script.google.com/macros/s/AKfycbyaraB73SaWkf8uyWd8Csdqn6iTaPzQJD6vyaXf6oNYWMR1VKEZ/exec"
+    var query_obj = {}
+    $.get(api, {query: JSON.stringify(query_obj)}, function(response){ 
+      var data = response.output;
+      console.log(data)
+      // for(var i = 0; i < data.length; i++) 
+      //   console.log("i: " + i + ", data[" + i + "]: ", data[i]);
+      console.log(data[0].title)
+      console.log(data[0].content)
+      // ActiveStart
+      var title = '<a class="item active" data-tab="first">' + data[0].title + '</a>';
+      $(title).appendTo("#insert2-1");
+      var content = '<div class="ui bottom attached tab segment active" data-tab="first">'
+      + data[0].content + '</div>';
+      $(content).appendTo("#insert2-2");
+      // ActiveEnd
+      for (var i = 1 ; i < data.length ; i++) {
+        var title = '<a class="item" data-tab="'+i+'">' + data[i].title + '</a>';
+        $(title).appendTo("#insert2-1");
+        var content = '<div class="ui bottom attached tab segment" data-tab="'+i+'">'
+        + data[i].content + '</div>';
+        $(content).appendTo("#insert2-2");
+      }
+      $('.menu .item').tab();
+    });
+
+
 
 
     //彈跳視窗

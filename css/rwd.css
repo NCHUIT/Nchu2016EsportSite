@@ -85,7 +85,10 @@
     text-align: center;
 }
 
-
+/*規章拖曳框*/
+#insert2-2 {
+    height: 360px; overflow-y: scroll;
+}
 
 /* rwd */
 @media (min-width: 700px){
