@@ -1,6 +1,9 @@
 /*loljoin*/
+#alert{
+    margin-top: 120px; 
+}
 .backgroundlol{
-background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg");
+background-image: url("../img/Teemo.jpg");
 background-attachment: fixed;
 background-size: cover;
 background-position: center center;

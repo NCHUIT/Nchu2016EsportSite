@@ -12,6 +12,33 @@
         <title>2016 中興校園電競賽</title>
     </head>
     <body class="backgroundlol">
+    	<div class="ui page dimmer" id="predimmer">
+            <div class="ui container" id="alert">
+                <h2 class="ui inverted center aligned icon header">
+                    <i class="send icon"></i>
+                    Alert!
+                </h2>
+                <div class="ui stackable grid">
+                    <div class="centered nine wide column">
+                        <div class="ui pink large message"><p>If it's not during 2015/12/28～2016/02/21,</p>the sheets you submit will be automatically ignored by our system. </div>
+                    </div>
+                    <div class="centered nine wide column">
+                        <div class="ui blue large message">  If you have read and agreed to all the terms and regulations, click "Enter" to continue.</div>
+                    </div>
+                </div>
+                <div class="ui horizontal divider"></div>
+                <div class="actions">
+                    <a href="./index.html" class="item">
+                        <div id="no" class="ui red basic cancel inverted button">
+                            <i class="repeat icon"></i>再看一次規章
+                        </div>
+                    </a>
+                    <div id="yes" class="ui green ok inverted button">
+                        <i class="checkmark icon"></i>Enter
+                    </div>
+                </div>
+            </div>      
+        </div>
         <div class="ui container">
             <div class="ui centered stackable grid">
                 <div class="eight wide column">
@@ -215,6 +242,9 @@
             </div>
             <script>
                         jQuery(document).ready(function($) {
+                        	$('#predimmer')
+                              .modal('setting', 'closable', false)
+                              .modal('show')
                         // fill up select and semantic dropdown init
                             var depart_tmpl = $('#depart-tmpl');
                             $('.depart-select').each(function(i,e){
