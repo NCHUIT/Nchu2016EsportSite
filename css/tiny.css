@@ -1,4 +1,7 @@
 /*tiny*/
+#alert{
+    margin-top: 120px; 
+}
 .backgroundlol{
 background-image: url("../img/pikaju.jpg");
 background-attachment: fixed;
