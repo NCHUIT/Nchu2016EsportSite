@@ -13,7 +13,7 @@ background-position: center center;
     margin-right: auto !important;
 }
 .ui.segment{
-    background: rgba(34, 36, 38, 0.1);
+    background: rgb(156, 202, 222);
     border: 1px solid #B5CC18;
 }
 .ui.inverted.teal.segment {
