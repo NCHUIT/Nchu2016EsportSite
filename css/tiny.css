@@ -78,10 +78,16 @@ a{
     margin-top: 10px !important;
 }
 .ui.yellow.inverted.segment{
-    margin-top: 110px !important;
+    margin-top: 50px !important;
     text-align: center;
 }
 #gameselect{
     text-align: center;
     background-color: darksalmon;
+}
+.ui.sponsor.segment {
+    background: rgba(37, 38, 39, 0.18);
+    border: none;
+    margin-bottom: auto;
+    padding-bottom: inherit;
 }

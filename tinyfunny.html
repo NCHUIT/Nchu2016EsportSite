@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>2016 中興校園電競賽</title>
     </head>
+    <div class="ui sponsor segment">
     <body class="backgroundlol">
     	<div class="ui page dimmer" id="predimmer">
             <div class="ui container" id="alert">
@@ -107,8 +108,8 @@
                                 </div>
                                 <div class="ui field">
                                     <div class="ui left action input">
-                                        <a class="ui button">帳號</a>
-                                        <input type="text" name="member1_nick" placeholder="請填遊戲帳號">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member1_mail"  placeholder="請填常用E-mail喔！">
                                     </div>
                                 </div>
                             </div>
@@ -298,15 +299,15 @@
                             	    }
                             	    ]
                             	},
-                            	member1_nick: {
-                            	    identifier: 'member1_nick',
-                            	    rules: [
-                            	    {
-                            	        type   : 'empty',
-                            	        prompt : 'Please enter your 帳號'
-                            	    }
-                            	    ]
-                            	},
+                            	// member1_nick: {
+                            	//     identifier: 'member1_nick',
+                            	//     rules: [
+                            	//     {
+                            	//         type   : 'empty',
+                            	//         prompt : 'Please enter your 帳號'
+                            	//     }
+                            	//     ]
+                            	// },
                             	member1_dep: {
                             	    identifier: 'member1_dep',
                             	    rules: [
@@ -324,7 +325,16 @@
                             	        prompt : 'Please select your 年級'
                             	    }
                             	    ]
-                            	}
+                            	},
+                            	member1_mail: {
+                                    identifier: 'member1_mail',
+                                    rules: [
+                                    {
+                                        type   : 'email',
+                                        prompt : 'Please enter your 伊媚兒 correctly.',
+                                    }
+                                    ]
+                                }
                             };
                             
                             var submitfun = function(event){
@@ -340,7 +350,8 @@
                                     grade: jQuery("select[name=member" + i +"_grade]").val(),
                                     sid: jQuery("input[name=member" + i +"_Sid]").val(),
                                     pnumber: jQuery("input[name=member" + i +"_Pnumber]").val(),
-                                    nick: jQuery("input[name=member" + i +"_nick]").val()
+                                    // nick: jQuery("input[name=member" + i +"_nick]").val(),
+                                    mail: jQuery("input[name=member" + i +"_mail]").val()
                                 });
                             }
                             var inputData = {
@@ -381,6 +392,6 @@
                         });
             </script>
         </div>
-
+	</div>
     </body>
 </html>

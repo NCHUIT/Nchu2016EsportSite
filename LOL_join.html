@@ -54,13 +54,13 @@
                             <div class="ui field">
                                 <div class="ui left action input">
                                     <a class="ui button">隊伍名稱</a>
-                                    <input type="text" name="team_name" value="">
+                                    <input type="text" name="team_name" placeholder="想像力就是我的超能力">
                                 </div>
                             </div>
                             <div class="ui field">
                                 <div class="ui left action input">
                                     <a class="ui button">隊伍簡稱</a>
-                                    <input type="text" name="team_short_name" placeholder="">
+                                    <input type="text" name="team_short_name" placeholder="來一個強而有力的">
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                         <div class="eight wide column">
                             <div class="ui raised segment">
                                 <a class="ui red ribbon label">1</a>
-                                <span class="ui teal header">隊員1</span>
+                                <span class="ui teal header">隊長Leader</span>
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">姓名</a>
@@ -105,6 +105,12 @@
                                     <div class="ui left action input">
                                         <a class="ui button">UID.</a>
                                         <input type="text" name="member1_Uid"  placeholder="請填User ID">
+                                    </div>
+                                </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member1_mail"  placeholder="請填常用E-mail喔！">
                                     </div>
                                 </div>
                             </div>
@@ -150,6 +156,12 @@
                                         <input type="text" name="member2_Uid"  placeholder="請填User ID">
                                     </div>
                                 </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member2_mail"  placeholder="請填常用E-mail喔！">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,6 +203,12 @@
                                     <div class="ui left action input">
                                         <a class="ui button">UID.</a>
                                         <input type="text" name="member3_Uid"  placeholder="請填User ID">
+                                    </div>
+                                </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member3_mail"  placeholder="請填常用E-mail喔！">
                                     </div>
                                 </div>
                             </div>
@@ -236,6 +254,12 @@
                                         <input type="text" name="member4_Uid"  placeholder="請填User ID">
                                     </div>
                                 </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member4_mail"  placeholder="請填常用E-mail喔！">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -279,6 +303,12 @@
                                         <input type="text" name="member5_Uid"  placeholder="請填User ID">
                                     </div>
                                 </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member5_mail"  placeholder="請填常用E-mail喔！">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,6 +350,12 @@
                                     <div class="ui left action input">
                                         <a class="ui button">UID.</a>
                                         <input type="text" name="member6_Uid"  placeholder="請填User ID">
+                                    </div>
+                                </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member6_mail"  placeholder="請填常用E-mail喔！">
                                     </div>
                                 </div>
                             </div>
@@ -491,7 +527,7 @@
                             prompt : 'Please enter your 隊伍簡稱'
                         }
                         ]
-                    },
+                    }
                 };
                 for (var i = 1; i <= 5; i++) {
                     player_rule_fields['member' + i + '_name'] = {
@@ -557,6 +593,15 @@
                         }
                         ]
                     };
+                    player_rule_fields['member' + i + '_mail'] = {
+                        identifier: 'member' + i +'_mail',
+                        rules: [
+                        {
+                            type   : 'email',
+                            prompt : 'Please enter your 隊員' + i +'的伊媚兒 correctly.',
+                        }
+                        ]
+                    };
                 }
                 var submitfun = function(event){
                     $('#dimmer').dimmer('show');
@@ -571,7 +616,8 @@
                         sid: jQuery("input[name=member" + i +"_Sid]").val(),
                         pnumber: jQuery("input[name=member" + i +"_Pnumber]").val(),
                         nick: jQuery("input[name=member" + i +"_nick]").val(),
-                        uid: jQuery("input[name=member" + i +"_Uid]").val()
+                        uid: jQuery("input[name=member" + i +"_Uid]").val(),
+                        mail: jQuery("input[name=member" + i +"_mail]").val()
                     });
                 }
                 var inputData = {
