@@ -191,13 +191,8 @@ jQuery(document).ready(function(){
     });
 
 
-    // Logo附著效果
-    // $('.garena01')
-    //   .transition('scale')
-    // ;
-    $('.garena01').click(function(){
-      $(this).transition('scale');
-    });
+
+
 
 });
 
