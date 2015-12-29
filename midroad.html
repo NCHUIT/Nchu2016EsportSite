@@ -87,6 +87,12 @@
                                         <input type="text" name="member1_Uid"  placeholder="請填User ID">
                                     </div>
                                 </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member1_mail"  placeholder="請填常用E-mail喔！">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,6 +307,15 @@
                             prompt : 'Please enter your 帳號',
                         }
                         ]
+                    },
+                    member1_mail: {
+                        identifier: 'member1_mail',
+                        rules: [
+                        {
+                            type   : 'email',
+                            prompt : 'Please enter your 伊媚兒 correctly.',
+                        }
+                        ]
                     }
 
                 };
@@ -317,7 +332,8 @@
                         sid: jQuery("input[name=member" + i +"_Sid]").val(),
                         pnumber: jQuery("input[name=member" + i +"_Pnumber]").val(),
                         nick: jQuery("input[name=member" + i +"_nick]").val(),
-                        uid: jQuery("input[name=member" + i +"_Uid]").val()
+                        uid: jQuery("input[name=member" + i +"_Uid]").val(),
+                        mail: jQuery("input[name=member" + i +"_mail]").val()
                     });
                 }
                 var inputData = {

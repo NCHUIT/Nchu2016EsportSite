@@ -84,6 +84,12 @@
                                         <input type="text" name="member1_nick"  placeholder="請填遊戲帳號">
                                     </div>
                                 </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">信箱</a>
+                                        <input type="text" name="member1_mail"  placeholder="請填常用E-mail喔！">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -292,6 +298,15 @@
                                     }
                                     ]
                                 };
+                                player_rule_fields['member' + i + '_mail'] = {
+                                    identifier: 'member' + i +'_mail',
+                                    rules: [
+                                    {
+                                        type   : 'email',
+                                        prompt : 'Please enter your 伊媚兒 correctly.',
+                                    }
+                                    ]
+                                };
                             }
                             var submitfun = function(event){
                                 $('#dimmer').dimmer('show');
@@ -305,7 +320,8 @@
                                     grade: jQuery("select[name=member" + i +"_grade]").val(),
                                     sid: jQuery("input[name=member" + i +"_Sid]").val(),
                                     pnumber: jQuery("input[name=member" + i +"_Pnumber]").val(),
-                                    nick: jQuery("input[name=member" + i +"_nick]").val()
+                                    nick: jQuery("input[name=member" + i +"_nick]").val(),
+                                    mail: jQuery("input[name=member" + i +"_mail]").val()
                                 });
                             }
                             var inputData = {
