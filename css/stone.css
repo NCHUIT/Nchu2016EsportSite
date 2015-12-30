@@ -74,10 +74,10 @@ a{
     background: rgba(253, 236, 202, 0.76)!important;
 }
 .ui.inverted.segment{
-    margin-top: 25px !important;
+    margin-top: 15px !important;
 }
 .ui.teal.inverted.segment{
-    margin-top: 65px !important;
+    margin-top: 35px !important;
     text-align: center;
 }
 .blur{
