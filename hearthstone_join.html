@@ -21,7 +21,7 @@
                 </h2>
                 <div class="ui stackable grid">
                     <div class="centered nine wide column">
-                        <div class="ui pink large message"><p>If it's not during 2015/12/28～2016/02/21,</p>the sheets you submit will be automatically ignored by our system. </div>
+                        <div class="ui pink large message"><p>If it's not during 2015/12/28～2016/02/19,</p>the sheets you submit will be automatically ignored by our system. </div>
                     </div>
                     <div class="centered nine wide column">
                         <div class="ui blue large message">  If you have read and agreed to all the terms and regulations, click "Enter" to continue.</div>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="ui horizontal divider"></div>
                 <div class="actions">
-                    <a href="./rule_hearthstone.html" class="item">
+                    <a href="./hearthstone_rule.html" class="item">
                         <div id="no" class="ui red basic cancel inverted button">
                             <i class="repeat icon"></i>再看一次規章
                         </div>
@@ -41,7 +41,7 @@
             </div>      
         </div>
         <div class="ui container">
-            <div class="ui centered stackable grid">
+            <div class="ui stackable grid">
             <div class="eight wide column">
                 <div class="ui teal inverted segment">
                     <h3>2016唯一信癢Χ清流盃爐石戰記大賽報名表</h3>
@@ -49,7 +49,7 @@
             </div>
             </div>
             <form id="myform" class="ui form">
-                <div class="ui centered stackable grid">
+                <div class="ui stackable grid">
                     <!-- 1 -->
                     <div class="row">
                         <div class="eight wide column">
@@ -81,13 +81,19 @@
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">帳號</a>
-                                        <input type="text" name="member1_nick"  placeholder="請填遊戲帳號">
+                                        <input type="text" name="member1_nick"  placeholder="BattlenetID&Tag(ex:ABC#999)">
                                     </div>
                                 </div>
                                 <div class="ui field">
                                     <div class="ui left action input">
                                         <a class="ui button">信箱</a>
                                         <input type="text" name="member1_mail"  placeholder="請填常用E-mail喔！">
+                                    </div>
+                                </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">臉書</a>
+                                        <input type="text" name="member1_fb"  placeholder="請填臉書帳號">
                                     </div>
                                 </div>
                             </div>
@@ -307,6 +313,15 @@
                                     }
                                     ]
                                 };
+                                player_rule_fields['member' + i + '_fb'] = {
+                                    identifier: 'member' + i +'_fb',
+                                    rules: [
+                                    {
+                                        type   : 'empty',
+                                        prompt : 'Please enter your 臉書帳號',
+                                    }
+                                    ]
+                                };
                             }
                             var submitfun = function(event){
                                 $('#dimmer').dimmer('show');
@@ -321,7 +336,8 @@
                                     sid: jQuery("input[name=member" + i +"_Sid]").val(),
                                     pnumber: jQuery("input[name=member" + i +"_Pnumber]").val(),
                                     nick: jQuery("input[name=member" + i +"_nick]").val(),
-                                    mail: jQuery("input[name=member" + i +"_mail]").val()
+                                    mail: jQuery("input[name=member" + i +"_mail]").val(),
+                                    fb: jQuery("input[name=member" + i +"_fb]").val()
                                 });
                             }
                             var inputData = {
