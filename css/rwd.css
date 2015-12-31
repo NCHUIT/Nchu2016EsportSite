@@ -18,11 +18,43 @@
 }
 
 
-#logo {
-    background-image: url("http://i.imgur.com/2StGvnQ.jpg");
+/*#logo {
+    background-image: url("http://linyuchien.github.io/source/main.gif");
     background-attachment: fixed;
     background-size: cover;
+}*/
+#logo {
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("/img/4GamesCycle.jpg");
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+
+    -webkit-animation: bgMove 40s linear infinite;
+    -moz-animation: bgMove 40s linear infinite;
+    -ms-animation: bgMove 40s linear infinite;
+    -o-animation: bgMove 40s linear infinite;
+    animation: bgMove 40s linear infinite;  
 }
+
+@-webkit-keyframes bgMove {
+    from {background-position:0% 0%;}
+    to {background-position: 4412px 0%;}
+}
+@-moz-keyframes bgMove {
+    from {background-position:0% 0%;}
+    to {background-position: 4412px 0%;}
+}
+@-ms-keyframes bgMove {
+    from {background-position:0% 0%;}
+    to {background-position: 4412px 0%;}
+}
+@keyframes bgMove {
+    from {background-position:0% 0%;}
+    to {background-position: 4412px 0%;}
+}
+
 
 .ui.sponsor.segment {
     background: rgba(232, 236, 241, 0.31);
