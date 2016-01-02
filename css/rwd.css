@@ -23,6 +23,7 @@
     background-attachment: fixed;
     background-size: cover;
 }*/
+
 #logo {
     width: 100%;
     background-attachment: fixed;
@@ -54,6 +55,7 @@
     from {background-position:0% 0%;}
     to {background-position: 4412px 0%;}
 }
+
 
 
 .ui.sponsor.segment {
@@ -207,3 +209,5 @@
     right: 0;
   }
 }
+
+
