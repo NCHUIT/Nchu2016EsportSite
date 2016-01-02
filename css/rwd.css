@@ -86,6 +86,15 @@
     background:-webkit-linear-gradient(#85BEE8,#14476D);
 }
 
+.re-img {
+    max-width: 75%;
+}
+
+.ui.piled.segment{
+    background: rgba(120, 130, 191, 0.31);
+    border: 3px solid rgba(24, 50, 144, 0.98);
+}
+
 .ui.grid>.row>.column>img, .ui.grid>.row>img {
     max-width: 50%;
 }
