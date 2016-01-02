@@ -190,6 +190,11 @@ jQuery(document).ready(function(){
         ;
     });
 
+    // footer popup
+    $('.pop')
+    .popup({
+    })
+    ;
 
 
     //Google Analystics
