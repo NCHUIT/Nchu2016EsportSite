@@ -17,13 +17,7 @@
     cursor: pointer;
 }
 
-
-/*#logo {
-    background-image: url("http://linyuchien.github.io/source/main.gif");
-    background-attachment: fixed;
-    background-size: cover;
-}*/
-
+/*segment-1背景輪播效果*/
 #logo {
     width: 100%;
     background-attachment: fixed;
@@ -63,14 +57,13 @@
 }
 
 #intro {
-    background-image: url("http://www.falseprovince.com/images/duende2/bg/bg3.jpg");
-    background-attachment: fixed;
+    background-image: url("http://i.imgur.com/xGWXpBr.png");
     background-size: cover;
 }
 
 
 #NEWS {
-    background-image: url("http://i.imgur.com/v9GProF.jpg");
+    background-image: url("/img/2016es.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -83,7 +76,10 @@
 }
 
 #detail {
-    background:-webkit-linear-gradient(#85BEE8,#14476D);
+    background-image: url("http://i.imgur.com/1Vwj42T.png");
+    background-attachment: fixed;
+    background-size: cover;
+    /*background:-webkit-linear-gradient(#85BEE8,#14476D);*/
 }
 
 .re-img {
@@ -100,7 +96,7 @@
 }
 
 #report {
-    background-image: url("http://i.imgur.com/hPHxDd1.jpg");
+    background-image: url("http://i.imgur.com/z1TvVZn.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -111,13 +107,6 @@
 
 .space {
     height: 120px;
-}
-
-.ui.middle.aligned{
-    background-image: url("http://i.imgur.com/Rr6CYKj.jpg");
-    background-size: 100%;
-    border: 1px solid #DDD;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .ui.segment{
@@ -132,6 +121,13 @@
 #insert2-2 {
     height: 360px; overflow-y: scroll;
 }
+/*規章名稱於width<647px時套用scroll效果*/
+@media (max-width: 647px){
+    .ui.top.attached.tabular.menu {
+      overflow-x: scroll;
+    }
+}
+
 
 /* rwd */
 @media (min-width: 700px){
@@ -218,5 +214,7 @@
     right: 0;
   }
 }
+
+
 
 
