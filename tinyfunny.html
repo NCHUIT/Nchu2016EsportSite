@@ -112,6 +112,12 @@
                                         <input type="text" name="member1_mail"  placeholder="請填常用E-mail喔！">
                                     </div>
                                 </div>
+                                <div class="ui field">
+                                    <div class="ui left action input">
+                                        <a class="ui button">臉書</a>
+                                        <input type="text" name="member1_fb"  placeholder="請填臉書帳號">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -334,6 +340,15 @@
                                         prompt : 'Please enter your 伊媚兒 correctly.',
                                     }
                                     ]
+                                },
+                                member1_fb: {
+                                    identifier: 'member1_fb',
+                                    rules: [
+                                    {
+                                        type   : 'empty',
+                                        prompt : 'Please enter your 臉書帳號',
+                                    }
+                                    ]
                                 }
                             };
                             
@@ -351,7 +366,8 @@
                                     sid: jQuery("input[name=member" + i +"_Sid]").val(),
                                     pnumber: jQuery("input[name=member" + i +"_Pnumber]").val(),
                                     // nick: jQuery("input[name=member" + i +"_nick]").val(),
-                                    mail: jQuery("input[name=member" + i +"_mail]").val()
+                                    mail: jQuery("input[name=member" + i +"_mail]").val(),
+                                    fb: jQuery("input[name=member" + i +"_fb]").val()
                                 });
                             }
                             var inputData = {
