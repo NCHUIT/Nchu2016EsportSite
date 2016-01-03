@@ -37,7 +37,7 @@
                         <i class="checkmark icon"></i>Enter
                     </div>
                 </div>
-            </div>      
+            </div>
         </div>
         <div class="ui container">
             <div class="ui stackable grid">
@@ -449,44 +449,53 @@
                     </div>
                 </div>
             </div>
-            <div class="ui modal" id="successShow" >
-                <i class="close icon"></i>
-                <div class="header">
-                    非常感謝您
+        <div class="ui modal" id="successShow">
+            <i class="close icon"></i>
+            <div class="header">
+                這有點尷尬...
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <img src="http://i.giphy.com/l3nW6GKhAYt9zGWgU.gif">
                 </div>
-                <div class="image content">
-                    <div class="ui medium image">
-                        <img src="img/miao.jpg">
-                    </div>
-                    <div class="description">
-                        <div class="ui header">Thank you!</div>
-                        <p>我們已經收到您的回覆.</p>
-                        <p>接下來您需要做的是多多練習喔！</p>
-                        <p>祝福您得冠軍呦>.</p>
-                    </div>
-                </div>
-                <div class="actions">
-                    <div class="ui teal buttons">
-                        <div class="ui button">提交其他報名表</div>
-                        <div class="ui combo bottom right pointing dropdown icon button" id="combo_dropdown">
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                                <a class="item" href="./LOL_join.html"><i class="pointing right icon"></i>就愛LOL^.^</a>
-                                <div class="divider"></div>
-                                <a href="./midroad.html" class="item"><i class="pointing right icon"></i>中路殺殺殺</a>
-                                <div class="divider"></div>
-                                <a href="./hearthstone_join.html" class="item"><i class="pointing right icon"></i>爐石出牌囉</a>
-                                <div class="divider"></div>
-                                <a href="./tinyfunny.html" class="item"><i class="pointing right icon"></i>小小小遊戲</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="./index.html" class="ui positive right labeled icon button">
-                    回競賽首頁
-                    <i class="home icon"></i>
-                    </a>
+                <div class="description">
+                    <div class="ui header">麻煩您！</div>
+                    <p>我們已經收到您的回覆.</p>
+                    <p>接下來請領取繳費代碼，至各大超商繳費</p>
                 </div>
             </div>
+            <div class="ui divider"></div>
+            <!-- 繳費流程 -->
+            <div style="text-align: center; margin-bottom: 14px;">
+                <div class="ui steps">
+                    <div class="step">
+                        <i class="edit icon"></i>
+                        <div class="content">
+                            <div class="title">填寫報名資料</div>
+                            <div class="description">告訴我們關於你/你們</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">領取繳費代碼</div>
+                            <div class="description">我們使用超商繳費!</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">回報繳費號碼</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <a href="https://p.allpay.com.tw/pc9dG">
+                    <img src="https://payment.allpay.com.tw/Content/themes/WebStyle201404/images/allpay.png" />
+                </a>
+            </div>
+        </div>
             <script>
             jQuery(document).ready(function($) {
                 $('#predimmer')
