@@ -195,6 +195,10 @@ jQuery(document).ready(function(){
     .popup({
     })
     ;
+    $('.ui.bottom.attached.button')
+    .popup({
+    })
+    ;
 
 
     //Google Analystics

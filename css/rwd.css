@@ -49,8 +49,7 @@
     to {background-position: 4412px 0%;}
 }
 
-
-
+/*sponsor background transparent effect*/
 .ui.sponsor.segment {
     background: rgba(232, 236, 241, 0.53);
 }
@@ -67,9 +66,14 @@
     background-size: cover;
 }
 
+.fb-left {
+    background: rgba(232, 236, 241, 0.53);
+}
+
 
 #insert {
-    border: inset;
+    border: rgba(0,0,0,.4) solid 5px;
+    border-radius: 5px;
     height: 405px;
     overflow-y: scroll;
 }
