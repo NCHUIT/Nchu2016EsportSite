@@ -192,13 +192,14 @@ jQuery(document).ready(function(){
 
     // footer popup
     $('.pop')
-    .popup({
-    })
+      .popup({
+      })
     ;
     $('.ui.bottom.attached.button')
-    .popup({
-    })
+      .popup({
+      })
     ;
+
 
 
     //Google Analystics

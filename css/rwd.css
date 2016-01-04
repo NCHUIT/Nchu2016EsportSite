@@ -21,7 +21,7 @@
 #logo {
     width: 100%;
     background-size: cover;
-    background-image: url("http://i.imgur.com/3XqpCpm.jpg");
+    background-image: url("http://i.imgur.com/cBJYaDH.jpg");
     background-position: 0px 0px;
     background-repeat: repeat-x;
 
@@ -51,11 +51,11 @@
 
 /*sponsor background transparent effect*/
 .ui.sponsor.segment {
-    background: rgba(232, 236, 241, 0.53);
+    background: rgba(29, 94, 175, 0.35);
 }
 
 #intro {
-    background-image: url("http://i.imgur.com/xGWXpBr.png");
+    background-image: url("http://i.imgur.com/pUJi0wT.png");
     background-size: cover;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #detail {
-    background-image: url("http://i.imgur.com/1Vwj42T.png");
+    background-image: url("http://i.imgur.com/njndH2k.png");
     background-attachment: fixed;
     background-size: cover;
     /*background:-webkit-linear-gradient(#85BEE8,#14476D);*/
