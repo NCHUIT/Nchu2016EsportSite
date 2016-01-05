@@ -220,4 +220,50 @@
 
 
 
-
+ul, li {
+   margin:0;
+   padding:0;
+}
+li {
+   list-style:none;
+   float:left;
+}
+.grey {
+   color:#616161;/*フォントとアイコンの色*/
+}
+.animation_button {
+   background:#83BEC5;/*背景色*/
+   width:80px;
+   height:68px;
+   margin:10px 5px;
+   text-align:center;
+   line-height:1.4;
+   padding:12px 10px 10px;
+   border-radius: 80px;
+   -webkit-border-radius: 80px;/*Safari & Chrome */
+   transiton:all 0.5s ease;/*アニメーションの設定*/
+   -webkit-transition: all 0.5s ease;/*Safari & Chrome */
+   -moz-transition: all 0.5s ease;/*FireFox */
+   -ms-transition: all 0.5s ease;/*IE*/
+   border:2px solid #F2F2F2;
+   font-family: 'Open Sans Condensed', sans-serif;
+   float:left;
+   font-weight:bold;
+}
+.animation_button:hover{/*マウスオーバー時*/
+   background:#F76D8A;/*背景色*/
+   animation: kaiten 1s;
+   animation-iteration-count: 1;/*アニメーションの繰り返し回数*/
+   -webkit-animation: kaiten 1s; /*Safari & Chrome */
+   -webkit-animation-iteration-count: 1;/*Safari & Chrome */
+}
+ 
+@keyframes kaiten {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); } 
+ 
+}
+@-webkit-keyframes kaiten { /*Safari & Chrome */
+   0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); } 
+}
