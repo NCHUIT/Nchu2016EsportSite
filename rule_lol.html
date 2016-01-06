@@ -5,7 +5,37 @@
 	<title>英雄聯盟團體/個人賽制與規則</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/LOGO2.gif">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+    #gotopbutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index:20;
+    cursor: pointer;
+    }
+    i.red.icon {
+    color: rgba(255,255,255,.9)!important;
+    }
+    </style>
+    <script>
+    jQuery(document).ready(function(){
+          //control scroll back to top button
+      $("#gotopbutton").on({
+        mouseenter: function(){
+          $(this).addClass('animated shake');
+        },
+        mouseleave: function(){
+          $(this).removeClass('animated shake');
+        },
+        click: function(){
+          $('html,body').animate({scrollTop:$('.ui.top.menu').offset().top},600);
+        }
+      });
+    });
+    </script>
 </head>
 <body style="background-color:black">
 <!-- manu bar -->
@@ -24,13 +54,16 @@
 				<div class="item">
 					<img class="ui avatar image" src="http://i1.imgbus.com/doimg/3ydybe9tfsdc6n3n3.gif">
 					<div class="content">
-						<a class="header">賽務組人員</a>
-						<div class="description">連到他的FB</div>
+						<a class="header">2016清流盃</a>
+						<div class="description">賽務組</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div> 
+
+    <i id='gotopbutton' class=" big red arrow circle up icon"></i>
+
     <h1 style="text-align:center; color:white;"><span style="font-family:comic sans ms,cursive"><strong><em>中興大學清流盃電競大賽&nbsp;</em><br />英雄聯盟團體/個人賽事規章</strong></span></h1>
     <div class="ui stackable grid" style="color:white">
         <div class="four wide column" style="color:white;">
@@ -189,29 +222,34 @@
                 <div class="ui divider">&nbsp;</div>
                 <div class="ui divider">&nbsp;</div><br><br>
                 <ul dir="ltr">
-            <span style="font-size:22px" id=".5"><em><strong><span style="font-family:comic sans ms,cursive">英雄聯盟團體賽賽賽制與流程</span></strong></em></span>
+            <span style="font-size:22px" id=".5"><em><strong><span style="font-family:comic sans ms,cursive">英雄聯盟團體賽賽制與流程</span></strong></em></span>
             </ul>
 
 
-            <p dir="ltr"><strong><span style="font-size:20px"><span style="font-family:comic sans ms,cursive"> 一、賽制:</span></span></strong></p>
+             <h3 dir="ltr"><strong><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">一、賽制:</span></span></strong></h3>
 
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) 64強、32強皆為BO1單淘汰制。</span></span></p>
+            <ol dir="ltr">
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">64強、32強皆為BO1單淘汰制。</span></span></p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">16強為小組賽分成4組，每組隊伍需與自己組內的其他隊伍各進行一場比賽，勝場數最高的兩隊晉級。</span></span></p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">8強、4強為BO3線上直播賽。</span></span></p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">冠亞賽為BO3賽制線下直播賽。</span></span></p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">64強、32強、16強、8強、4強皆為線上賽，而8強、4強在</span></span><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">網路上會進行線上直播。</span></span></p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">冠亞賽為線下賽，在網路上會進行線上直播，且會有主</span></span><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">播、賽評進行轉播。</span></span></p>
+                </li>
+            </ol>
 
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)16強為小組賽分成4組，每組隊伍需與自己組內的其他隊</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伍各進行一場比賽，勝場數最高的兩隊晉級。</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)8強、4強為BO3線上直播賽</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)冠亞賽為BO3賽制線下直播賽。</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5)64強、32強、16強、8強、4強皆為線上賽，而8強、4強在</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;網路上會進行線上直播。</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(6)冠亞賽為線下賽，在網路上會進行線上直播，且會有主</span></span></p>
-
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;播、賽評進行轉播。</span></span></p>
+            <p dir="ltr">&nbsp;</p>
 
             <p dir="ltr"><strong><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">二、賽事流程:</span></span></strong></p>
 
@@ -262,11 +300,20 @@
 
             <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp; &nbsp; &nbsp; &nbsp;2.比賽棄權:</span></span></p>
 
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(i)若雙方於規定時間內未完成約戰，則判定雙方棄權。</span></span></p>
+            <ul style="margin-left:40px">
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">若雙方於規定時間內未完成約戰，則判定雙方棄權。</span></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">若甲方積極約戰，乙方不做任何回應，則將對話截圖傳送至主辦單位，由主辦單位判定乙方棄權。</span></span></p>
+                </li>
+                <li>
+                <p><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">若雙方確認約定時間後，某方遲到15分鐘，將截圖傳送至主辦單位，由主辦單位判定該方棄權。</span></span></p>
+                </li>
+            </ul>
 
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(ii)若甲方積極約戰，乙方不做任何回應，則將對話截圖傳送至主辦單位，由主辦單位判定乙方棄權。</span></span></p>
+            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span></p>
 
-            <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(iii)若雙方確認約定時間後，某方遲到15分鐘，將截圖傳送至主辦單位，由主辦單位判定乙方棄權。</span></span></p>
 
             <p dir="ltr"><span style="font-size:20px"><span style="font-family:comic sans ms,cursive">&nbsp; &nbsp; &nbsp; &nbsp;3.申訴:</span></span></p>
 
