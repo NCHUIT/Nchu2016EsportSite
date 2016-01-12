@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<script src="js/facebook_pages.js"></script>
+	<script src="js/jquery.aniview.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
 	<script src="js/spreadsheetSoup.js"></script>
@@ -28,7 +29,6 @@
 	<meta property="og:image" content="http://nchues2016.nchuit.cc/img/white_logo.png" />
 	<meta property="og:url" content="http://nchues2016.nchuit.cc" />
 	<meta property="og:description" content="中興大學2016清流盃電競賽，包含了英雄聯盟團體、單中賽以及爐石甚至是小遊戲比賽，歡迎中興大學的電玩同好們一起來共襄盛舉！" />
-
 </head>
 <body>
 <div class="pusher">
@@ -65,19 +65,19 @@
 		<div class="ui grid">
 			<div class="two wide column"></div>
 			<div class="twelve wide column">
-					<img src="img/BIG LOGO.gif" alt="logo" style="max-width: 50%; display:block; margin:auto;">
+					<img src="img/BIG LOGO.gif" alt="logo" style="max-width: 50%; display:block; margin:auto;" class="animated flipInX">
 					<!-- sponsor -->
-				<div class="ui sponsor segment">
+				<div class="ui sponsor segment animated bounce">
 				  <div class="ui grid">
 				    <div class="two wide column"></div>
 				    <div class="four wide column">
-				      <img src="img/twitch.png" alt="twitch" style="max-width: 100%;">
+				      <img src="img/twitch.png" alt="twitch" style="max-width: 100%;" class="logo-ani">
 				    </div>
 				    <div class="four wide column">
-					  <img src="img/Garena01.png" alt="Garena01" style="max-width: 70%; display:block; margin:auto;">
+					  <img src="img/Garena01.png" alt="Garena01" style="max-width: 70%; display:block; margin:auto;" class="logo-ani">
 					</div>
 					<div class="four wide column">
-					  <img src="img/FWLogo.png" alt="FW" style="max-width: 110%;">
+					  <img src="img/FWLogo.png" alt="FW" style="max-width: 110%;" class="logo-ani">
 					</div>
 					  <!-- <img src="img/blizzard EN.png" style="max-width: 23%;" alt="blizzard"> -->
 					<div class="two wide column"></div>
@@ -87,7 +87,7 @@
 				  	<div class="two wide column"></div>
 				  	<div class="four wide column"></div>
 				  	<div class="four wide column">
-				  		<img src="img/blizzard EN.png" style="max-width: 100%;" alt="blizzard">
+				  		<img src="img/blizzard EN.png" style="max-width: 100%;" alt="blizzard" class="logo-ani">
 				  	</div>
 					<div class="four wide column"></div>
 				  	<div class="two wide column"></div>
@@ -144,8 +144,8 @@
 								<div class="ui divider"></div>
 								<a class="ui orange ribbon label">爐石戰記</a>
 								<h1><span style="font-family:comic sans ms,cursive">天天爬天梯爬到煩了嗎? 競技場打到沒有趣味了嗎? 自己一個人划著手機、盯著螢幕有點乏味了嗎? 快來參加<em>清流盃</em>，與中興各路爐石好手角逐冠軍寶座，爭取得到中興爐石No.1的稱號吧!!!</span></h1>
-
 							</div>
+
 							<div class="ui raised segment">
 								<a class="ui yellow ribbon label">皮卡丘打排球</a><br>
 								<a class="ui blue ribbon label">小朋友下樓梯</a>
@@ -184,7 +184,7 @@
 			<div class="fourteen wide column">
 			  <div class="ui piled segment"><br><br>
 				<div class="ui centered cards">
-					<div class="card">
+					<div class="card animated fadeInRight">
 						<div class="content">
 							<div class="header">英雄聯盟團體/個人賽事規章</div>
 							<div class="description">
@@ -198,7 +198,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card">
+					<div class="card animated fadeInLeft">
 						<div class="content">
 							<div class="header">爐石戰記賽事規章</div>
 							<div class="description">
@@ -212,7 +212,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card">
+					<div class="card animated fadeInRight">
 						<div class="content">
 							<div class="header">小遊戲賽事規章</div>
 							<div class="description">
@@ -429,8 +429,7 @@
 						</div>
 						<div class="description">
 						<div class="ui header">皮卡丘</div>
-							<p>We've grabbed the following image from the image associated with your registered e-mail address.</p>
-							<p>Is it okay to use this photo?</p>
+							<p>\（ ✿＞◡❛）y </p>
 						</div>
 					</div>
 					<div class="image content">
@@ -439,8 +438,7 @@
 						</div>
 						<div class="description">
 						<div class="ui header">下樓梯</div>
-							<p>We've grabbed the following image from the image associated with your registered e-mail address.</p>
-							<p>Is it okay to use this photo?</p>
+							<p>\（ ✿＞◡❛）y </p>
 						</div>
 					</div>
 					<div class="actions">
@@ -486,7 +484,7 @@
 				<div class="three wide column">
 					<h4 class="ui inverted header"><span style="font-family:comic sans ms,cursive">twitch連結</span></h4><br><br>
 					<div>
-						<a href="http://www.twitch.tv/esports_nchu/profile0" target="_blank"><img src="http://i.imgur.com/KR58Tst.png" style="max-width: 31%;" alt="twitch"></a>
+						<a href="http://www.twitch.tv/esports_nchu/profile0" target="_blank"><img src="http://i.imgur.com/KR58Tst.png" style="max-width: 31%;" alt="twitch" class="twit"></a>
 					</div>
 				</div>
 				<div class="seven wide column">

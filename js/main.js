@@ -81,14 +81,34 @@ jQuery(document).ready(function(){
       //control scroll back to top button
       $("#gotopbutton").on({
         mouseenter: function(){
-          $(this).addClass('animated shake');
+          $(this).addClass('animated rubberBand');
         },
         mouseleave: function(){
-          $(this).removeClass('animated shake');
+          $(this).removeClass('animated rubberBand');
         },
         click: function(){
           $('html,body').animate({scrollTop:$('#logo').offset().top},600);
         }
+      });
+
+      // twitch連結 animated
+      $(".twit").on({
+        mouseenter: function(){
+          $(this).addClass('animated rubberBand');
+        },
+        mouseleave: function(){
+          $(this).removeClass('animated rubberBand');
+        },
+      });
+
+      // logo animated
+      $(".logo-ani").on({
+        mouseenter: function(){
+          $(this).addClass('animated pulse');
+        },
+        mouseleave: function(){
+          $(this).removeClass('animated pulse');
+        },
       });
 
 
@@ -200,6 +220,12 @@ jQuery(document).ready(function(){
       })
     ;
 
+    //aniview control
+    var options = {
+         animateThreshold: 100,
+         scrollPollInterval: 20
+    }
+    $('.aniview').AniView(options);
 
 
     //Google Analystics
@@ -210,5 +236,6 @@ jQuery(document).ready(function(){
 
   ga('create', 'UA-71808269-1', 'auto');
   ga('send', 'pageview');
+
 });
 

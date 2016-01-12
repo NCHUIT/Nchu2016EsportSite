@@ -25,10 +25,10 @@
           //control scroll back to top button
       $("#gotopbutton").on({
         mouseenter: function(){
-          $(this).addClass('animated shake');
+          $(this).addClass('animated rubberBand');
         },
         mouseleave: function(){
-          $(this).removeClass('animated shake');
+          $(this).removeClass('animated rubberBand');
         },
         click: function(){
           $('html,body').animate({scrollTop:$('.ui.top.menu').offset().top},600);
