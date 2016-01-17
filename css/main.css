@@ -103,7 +103,10 @@
 }
 
 /*reward*/
-#reward{
+#reward-1{
+    background: rgba(202, 213, 224, 0.61);
+}
+#reward-2{
     background: rgba(210, 212, 224, 0.77);
 }
 
