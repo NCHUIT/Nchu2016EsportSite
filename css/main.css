@@ -102,6 +102,11 @@
     background-size: cover;
 }
 
+/*reward*/
+#reward{
+    background: rgba(210, 212, 224, 0.77);
+}
+
 .section {
     padding: 20px 0;
 }
