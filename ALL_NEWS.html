@@ -2,44 +2,65 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>中興大學2016清流盃電競賽</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/LOGO2.gif">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/rwd.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body id="NEWS">
 
-		<!-- container (navbar) -->
-	<div class="ui top attached menu">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<style>
+	.ui.segment{
+		background: rgba(210, 212, 224, 0.77);
+	}
+
+
+	</style>
+
+</head>
+<body id="ALL_NEWS">
+
+<!-- manu bar -->
+	<div class="ui top menu">
 		<div class="ui container" style="height: 55px;">
 			<a href="index.html" class="item">
 				<img src="img/LOGO.gif" alt="LOGO">
 			</a>
-			<a href="https://goo.gl/4kUqmz" class="item">
-				<i class="large facebook square icon"></i>清流盃粉絲專頁
+            <a href="./LOL_join.html" class="item">
+                <i class="large arrow right icon"></i>前往報名
+            </a>
+			<a href="https://goo.gl/G2CGbR" class="item">
+				<i class="large facebook square icon"></i>粉絲專頁
 			</a>
 			<div class="right item">
 				<div class="item">
 					<img class="ui avatar image" src="http://i1.imgbus.com/doimg/3ydybe9tfsdc6n3n3.gif">
 					<div class="content">
-						<a class="header">賽務組人員</a>
-						<div class="description">連到他的FB</div>
+						<a class="header">2016清流盃</a>
+						<div class="description">賽務組</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>  
 	
 
-	
+<div class="ui container">
 
 	<!-- total grid-->
 	<div class="ui grid">
-	  <div class="two wide column"></div>
-	  <div class="twelve wide column">
+	  <div class="one wide column"></div>
+	  <div class="fourteen wide column">
 		<br>
+		<div class="ui segment">
 		<h2 class="ui header">
 			<img class="ui image" src="http://semantic-ui.com/images/icons/plugin.png">
 			<div class="content">
@@ -48,13 +69,26 @@
 		</h2>	
 		
 		<!-- accordion -->
-		<div id="insert" class="ui styled fluid accordion">  <!-- backend:https://goo.gl/FFWZdn -->
-								<!-- insert google sheet data-->
+		<div id="insert" class="ui styled fluid accordion" style="height: 666px;">  
+		<!-- backend:https://goo.gl/FFWZdn -->
+		<!-- insert google sheet data-->
 		</div>	
 	  </div>
 	</div>
+	
+	</div>
 
 <br><br>
+
+
+
+
+	</div>
+	<div class="one wide column"></div>  <!-- total grid end -->
+
+</div>
+
+
 <!-- footer segment -->
 	<div class="ui inverted vertical footer segment">
 		<div class="ui center aligned container">
@@ -103,11 +137,6 @@
 	</div>
 
 
-	</div>
-	<div class="two wide column"></div>  <!-- total grid end -->
-
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
 	<script src="js/spreadsheetSoup.js"></script>
 	<script>
 	jQuery(document).ready(function(){

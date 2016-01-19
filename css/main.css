@@ -64,6 +64,15 @@
     background-size: cover;
 }
 
+#ALL_NEWS {
+    background-image: url("/img/2016es.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+
 .fb-left {
     background: rgba(232, 236, 241, 0.53);
 }
