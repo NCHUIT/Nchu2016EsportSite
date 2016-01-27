@@ -27,7 +27,7 @@
     -moz-animation: bgMove 40s linear infinite;
     -ms-animation: bgMove 40s linear infinite;
     -o-animation: bgMove 40s linear infinite;
-    animation: bgMove 40s linear infinite;  
+    animation: bgMove 40s linear infinite;
 }
 
 @-webkit-keyframes bgMove {
@@ -209,13 +209,23 @@ li {
    -webkit-animation: kaiten 1s; /*Safari & Chrome */
    -webkit-animation-iteration-count: 1;/*Safari & Chrome */
 }
- 
+
 @keyframes kaiten {
    0% { transform: rotate(0deg); }
-   100% { transform: rotate(360deg); } 
- 
+   100% { transform: rotate(360deg); }
+
 }
 @-webkit-keyframes kaiten { /*Safari & Chrome */
    0% { -webkit-transform: rotate(0deg); }
-   100% { -webkit-transform: rotate(360deg); } 
+   100% { -webkit-transform: rotate(360deg); }
+}
+
+div.ui.error.message {
+    margin-bottom: 20px;
+}
+div.ui.error.message ul.list {
+    display: inline-block;
+}
+div.ui.error.message ul.list li {
+    margin-right: 10px;
 }
