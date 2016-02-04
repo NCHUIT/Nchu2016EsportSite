@@ -72,3 +72,12 @@ a{
 .ui.teal.inverted.segment{
     text-align: center;
 }
+div.ui.error.message {
+    margin-bottom: 20px;
+}
+div.ui.error.message ul.list {
+    display: inline-block;
+}
+div.ui.error.message ul.list li {
+    margin-right: 10px;
+}
